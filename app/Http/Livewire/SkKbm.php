@@ -20,6 +20,7 @@ class SkKbm extends Component
 
     public function render()
     {
+        $searchTerm = '%'.$this->searchTerm.'%';
         $skkbms= SkKbmModel::latest()->paginate(10);
         return view('livewire.sk-kbm.index', ['skkbms' => $skkbms]);
     }

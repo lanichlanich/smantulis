@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SkKbmController;
+use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SuratInController;
 use App\Http\Controllers\SuratOutController;
 
@@ -31,4 +32,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/export-surat-keluar', [SuratOutController::class, 'export'])->name('export-out');
     Route::view('/sk-kbm','sk-kbms');
     Route::get('/export-sk-kbm', [SkKbmController::class, 'export'])->name('export-kbm');
+    Route::view('/pegawai','pegawais');
+    Route::get('/export-pegawai', [PegawaiController::class, 'export'])->name('export-pegawai');
 });
