@@ -9,7 +9,7 @@ class SkKbm extends Model
 {
     use HasFactory;
 
-    protected $fillabe = [
+    protected $fillable = [
         'no_surat',
         'tgl_surat',
         'tapel',

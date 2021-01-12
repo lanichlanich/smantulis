@@ -127,7 +127,7 @@ class SkKbm extends Component
                 'softfile' => $softName,
             ]);
             $this->updateMode = false;
-            $this->emit('skbmUpdate'); // Close model to using to jquery
+            $this->emit('skkbmUpdate'); // Close model to using to jquery
             session()->flash('message', 'SK KBM / TU berhasil di Update');
             $this->resetInputFields();
 
