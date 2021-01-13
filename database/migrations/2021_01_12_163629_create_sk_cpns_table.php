@@ -15,6 +15,13 @@ class CreateSkCpnsTable extends Migration
     {
         Schema::create('sk_cpns', function (Blueprint $table) {
             $table->id();
+            $table->string('nama_pns');
+            $table->string('nip');
+            $table->string('no_sk');
+            $table->date('tgl_sk');
+            $table->string('tmt_sk');
+            $table->string('pejabat');
+            $table->string('softfile');
             $table->timestamps();
         });
     }

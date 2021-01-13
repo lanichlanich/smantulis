@@ -10,13 +10,14 @@ class SkCpns extends Model
     use HasFactory;
 
     protected $fillable = [
-        'no_surat',
-        'tgl_surat',
-        'nama',
-        'tmt',
-        'golongan',
+
+        'nama_pns',
+        'nip',
+        'no_sk',
+        'tgl_sk',
+        'tmt_sk',
         'pejabat',
-        'masa_kerja',
         'softfile',
+
     ];
 }

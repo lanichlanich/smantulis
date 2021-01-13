@@ -12,7 +12,7 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class Pegawai extends Component
 {
-    public $foto, $nama, $jk, $nik, $tgl_lahir, $tpt_lahir, $pegawai_id;
+    public $foto, $nama, $jk, $nik, $tgl_lahir, $tpt_lahir, $jenis_ptk, $status_ptk, $pegawai_id;
     use WithPagination;
     use WithFileUploads;
     public $updateMode = false;
@@ -38,6 +38,8 @@ class Pegawai extends Component
         $this->nik = '';
         $this->tgl_lahir = '';
         $this->tpt_lahir = '';
+        $this->jenis_ptk = '';
+        $this->status_ptk = '';
     }
 
     public function store()
@@ -49,6 +51,8 @@ class Pegawai extends Component
             'nik' => 'required',
             'tgl_lahir' => 'required',
             'tpt_lahir' => 'required',
+            'jenis_ptk' => 'required',
+            'status_ptk' => 'required',
         ]);
 
         $softName = md5($this->foto.microtime().'.'.$this->foto->extension());
@@ -66,6 +70,8 @@ class Pegawai extends Component
                 'nik' => $this->nik,
                 'tgl_lahir' => $this->tgl_lahir,
                 'tpt_lahir' => $this->tpt_lahir,
+                'jenis_ptk' => $this->jenis_ptk,
+                'status_ptk' => $this->status_ptk,
             ]);
 
         session()->flash('message', 'PTK berhasil di input');
@@ -87,6 +93,8 @@ class Pegawai extends Component
         $this->nik = $pegawai->nik;
         $this->tgl_lahir = $pegawai->tgl_lahir;
         $this->tpt_lahir = $pegawai->tpt_lahir;
+        $this->jenis_ptk = $pegawai->jenis_ptk;
+        $this->status_ptk = $pegawai->status_ptk;
         
     }
 
@@ -107,6 +115,8 @@ class Pegawai extends Component
             'nik' => 'required',
             'tgl_lahir' => 'required',
             'tpt_lahir' => 'required',
+            'jenis_ptk' => 'required',
+            'status_ptk' => 'required',
         ]);
 
         $softName = md5($this->foto.microtime().'.pdf');
@@ -125,6 +135,8 @@ class Pegawai extends Component
                 'nik' => $this->nik,
                 'tgl_lahir' => $this->tgl_lahir,
                 'tpt_lahir' => $this->tpt_lahir,
+                'jenis_ptk' => $this->jenis_ptk,
+                'status_ptk' => $this->status_ptk,
             ]);
             $this->updateMode = false;
             $this->emit('pegawaiUpdate'); // Close model to using to jquery

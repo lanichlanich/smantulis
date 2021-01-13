@@ -236,6 +236,21 @@ return [
         ],
         ['header' => 'DAFTAR MENU'],
         [
+            'text'    => 'Kepegawaian',
+            'icon'    => 'fas fa-fw fa-user',
+            'url'     => '#',
+            'submenu' => [
+                [
+
+                    'text' => 'PTK',
+                    'icon'    => 'fas fa-fw fa-user',
+                    'url'  => 'pegawai',
+                ]
+                
+            ]
+        ],
+        [
+            
             'text'    => 'Arsip Surat',
             'icon'    => 'fas fa-fw fa-file-archive',
             'submenu' => [
@@ -259,11 +274,15 @@ return [
             'url'     => '#',
             'submenu' => [
                 [
-
                     'text' => 'SK KBM / Tugas TU',
                     'icon'    => 'fas fa-fw fa-file',
                     'url'  => 'sk-kbm',
-                ]
+                ],
+                [
+                    'text' => 'SK CPNS',
+                    'icon'    => 'fas fa-fw fa-file',
+                    'url'  => 'skcpns',
+                ],
                 
             ]
         ],

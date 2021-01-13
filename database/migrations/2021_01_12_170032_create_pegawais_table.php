@@ -21,6 +21,8 @@ class CreatePegawaisTable extends Migration
             $table->string('nik')->unique();
             $table->date('tgl_lahir');
             $table->string('tpt_lahir');
+            $table->string('jenis_ptk');
+            $table->string('status_ptk');
             $table->timestamps();
         });
     }

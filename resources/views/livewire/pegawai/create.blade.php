@@ -10,7 +10,7 @@
 <!-- Modal -->
 <div wire:ignore.self class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
@@ -51,6 +51,27 @@
                         <textarea class="form-control" id="exampleFormControlInput5" placeholder="Masukan Tempat Lahir"
                             wire:model="tpt_lahir"></textarea>
                         @error('tpt_lahir') <span class="text-danger error">{{ $message }}</span>@enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput6">Jenis PTK</label>
+                        <select id="exampleFormControlInput6" wire:model="jenis_ptk" class="form-control">
+                            <option value="-">-</option>
+                            <option value="Guru">Guru</option>
+                            <option value="Tenaga Administrasi">Tenaga Administrasi</option>
+                            <option value="Kepala Sekolah">Kepala Sekolah</option>
+                            <option value="Kasubag TU">Kasubag TU</option>
+                        </select>
+                        @error('jenis_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput7">Satatus PTK</label>
+                        <select id="exampleFormControlInput7" wire:model="status_ptk" class="form-control">
+                            <option value="-">-</option>
+                            <option value="PNS">PNS</option>
+                            <option value="NON PNS">NON PNS</option>
+                            <option value="PPPK">PPPK</option>
+                        </select>
+                        @error('status_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
                         <label for="customFile">Foto</label>

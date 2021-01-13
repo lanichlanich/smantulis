@@ -16,5 +16,7 @@ class Pegawai extends Model
         'nik',
         'tgl_lahir',
         'tpt_lahir',
+        'jenis_ptk',
+        'status_ptk',
     ];
 }
