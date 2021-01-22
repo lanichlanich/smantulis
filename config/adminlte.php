@@ -283,6 +283,11 @@ return [
                     'icon'    => 'fas fa-fw fa-file',
                     'url'  => 'skcpns',
                 ],
+                [
+                    'text' => 'SK Non PNS',
+                    'icon'    => 'fas fa-fw fa-file',
+                    'url'  => 'sknonpns',
+                ],
                 
             ]
         ],

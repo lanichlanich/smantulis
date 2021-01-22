@@ -12,25 +12,19 @@
             </div>
             <div class="modal-body">
                 <form>
-                    <input type="hidden" wire:model="skcpns_id">
+                    <input type="hidden" wire:model="sknonpns_id">
                     <div class="form-group">
-                        <label for="exampleFormControlInput0">Nama PNS</label>
-                        <select id="exampleFormControlInput0" wire:model="nama_pns" class="form-control">
+                        <label for="exampleFormControlInput0">Nama NON PNS</label>
+                        <select id="exampleFormControlInput0" wire:model="nama_non_pns" class="form-control">
                             <option value="-">-</option>
                             @foreach ($pegawai as $pgw)
                                 <option value="{{ $pgw->nama }}">{{ $pgw->nama }}</option>
                             @endforeach
                         </select>
-                        @error('nama_pns') <span class="text-danger error">{{ $message }}</span>@enderror
+                        @error('nama_non_pns') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">NIP</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan NIP"
-                            wire:model="nip">
-                        @error('nip') <span class="text-danger error">{{ $message }}</span>@enderror
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput2">No SK CPNS</label>
+                        <label for="exampleFormControlInput2">No SK NON PNS</label>
                         <input type="text" class="form-control" id="exampleFormControlInput2"
                             placeholder="Tanggal Surat" wire:model="no_sk">
                         @error('no_sk') <span class="text-danger error">{{ $message }}</span>@enderror
@@ -44,16 +38,6 @@
                         <label for="exampleFormControlInput4">TMT SK</label>
                         <input type="date" class="form-control" id="exampleFormControlInput4" wire:model="tmt_sk">
                         @error('tmt_sk') <span class="text-danger error">{{ $message }}</span>@enderror
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput5">Pejabat Pengangkat</label>
-                        <select id="exampleFormControlInput5" wire:model="pejabat" class="form-control">
-                            <option value="-">-</option>
-                            <option value="Bupati">Bupati</option>
-                            <option value="Gubernur">Gubernur</option>
-                            <option value="Mentri">Mentri</option>
-                        </select>
-                        @error('pejabat') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
                         <label for="customFile">Softfile</label>

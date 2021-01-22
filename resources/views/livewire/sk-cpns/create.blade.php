@@ -54,8 +54,12 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput5">Pejabat Pengangkat</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Masukan NIP"
-                            wire:model="pejabat">
+                        <select id="exampleFormControlInput5" wire:model="pejabat" class="form-control">
+                            <option value="-">-</option>
+                            <option value="Bupati">Bupati</option>
+                            <option value="Gubernur">Gubernur</option>
+                            <option value="Mentri">Mentri</option>
+                        </select>
                         @error('pejabat') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
