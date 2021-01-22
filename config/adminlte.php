@@ -284,6 +284,11 @@ return [
                     'url'  => 'skcpns',
                 ],
                 [
+                    'text' => 'SK PNS',
+                    'icon'    => 'fas fa-fw fa-file',
+                    'url'  => 'skpns',
+                ],
+                [
                     'text' => 'SK Non PNS',
                     'icon'    => 'fas fa-fw fa-file',
                     'url'  => 'sknonpns',

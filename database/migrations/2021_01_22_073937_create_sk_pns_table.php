@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSkNonPnsTable extends Migration
+class CreateSkPnsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,17 @@ class CreateSkNonPnsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sk_non_pns', function (Blueprint $table) {
+        Schema::create('sk_pns', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_non_pns');
+            $table->string('nama_pns');
             $table->string('no_sk');
             $table->date('tgl_sk');
             $table->date('tmt_sk');
+            $table->string('golongan');
+            $table->string('masa_kerja');
+            $table->integer('gaji_pokok');
+            $table->string('angka_kredit');
+            $table->string('pejabat');
             $table->string('softfile');
             $table->timestamps();
         });
@@ -31,6 +36,6 @@ class CreateSkNonPnsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sk_non_pns');
+        Schema::dropIfExists('sk_pns');
     }
 }

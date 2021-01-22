@@ -19,7 +19,7 @@ class CreateSkCpnsTable extends Migration
             $table->string('nip');
             $table->string('no_sk');
             $table->date('tgl_sk');
-            $table->string('tmt_sk');
+            $table->date('tmt_sk');
             $table->string('pejabat');
             $table->string('softfile');
             $table->timestamps();
