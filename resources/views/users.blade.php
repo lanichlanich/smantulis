@@ -26,5 +26,9 @@
             $('#exampleModal').modal('hide');
         });
 
+        window.livewire.on('userUpdate', () => {
+            $('#updateModal').modal('hide');
+        });
+
     </script>
 @stop

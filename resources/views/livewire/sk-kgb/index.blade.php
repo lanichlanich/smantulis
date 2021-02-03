@@ -49,8 +49,10 @@
                         <td>
                             <button data-toggle="modal" data-target="#updateModal" wire:click="edit({{ $value->id }})"
                                 class="btn btn-warning btn-sm mb-1"><i class="fa fa-magic"></i> Edit</button>
-                            <button wire:click="delete({{ $value->id }})" onclick="return confirm('Apakah Anda yakin?')"
-                                class="btn btn-danger btn-sm mb-1"><i class="fa fa-fw fa-trash"></i> Delete</button>
+                            <button onclick="return confirm('Apakah Anda yakin?') || event.stopImmediatePropagation()"
+                                wire:click="delete({{ $value->id }})" class="btn btn-danger btn-sm mb-1"><i
+                                    class="fa fa-fw fa-trash"></i>
+                                Delete</button>
                         </td>
                     </tr>
                 @endforeach

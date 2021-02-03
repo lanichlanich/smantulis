@@ -26,7 +26,9 @@
                         <td>
                             <button data-toggle="modal" data-target="#updateModal" wire:click="edit({{ $value->id }})"
                                 class="btn btn-primary btn-sm">Edit</button>
-                            <button wire:click="delete({{ $value->id }})" class="btn btn-danger btn-sm">Delete</button>
+                            <button onclick="return confirm('Apakah Anda yakin?') || event.stopImmediatePropagation()"
+                                wire:click.prevent="delete({{ $value->id }})"
+                                class="btn btn-danger btn-sm">Delete</button>
                         </td>
                     </tr>
                 @endforeach

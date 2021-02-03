@@ -236,6 +236,11 @@ return [
         ],
         ['header' => 'DAFTAR MENU'],
         [
+            'text'    => 'Dashboard',
+            'icon'    => 'fas fa-tachometer-alt fa-fw',
+            'url'     => 'home',
+        ],
+        [
             'text'    => 'Kepegawaian',
             'icon'    => 'fas fa-fw fa-user',
             'url'     => '#',
