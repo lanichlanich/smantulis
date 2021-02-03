@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Exports\SkNonPnsExport;
+use App\Exports\SkKgbExport;
 use Maatwebsite\Excel\Facades\Excel;
 
-class SkNonPnsController extends Controller
+class SkKgbController extends Controller
 {
     public function export() 
     {
-        return Excel::download(new SkNonPnsExport, 'SK NON PNS.xlsx');
+        return Excel::download(new SkKgbExport, 'SK KGB.xlsx');
     }
 }

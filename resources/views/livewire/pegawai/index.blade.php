@@ -32,7 +32,7 @@
                     <tr>
                         <td>
                             <img src="{{ asset('storage/Pegawai/' . $value->foto) }}" alt="Foto {{ $value->nama }}"
-                                class="rounded img-thumbnail mx-auto d-block" style="height: 100px; width:70px">
+                                class="rounded img-thumbnail mx-auto d-block" style="height: 80px; width:60px">
                         </td>
                         <td>{{ $value->nama }}</td>
                         <td>{{ $value->jk }}</td>

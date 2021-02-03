@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SkKbmController;
+use App\Http\Controllers\SkKgbController;
 use App\Http\Controllers\SkPnsController;
 use App\Http\Controllers\SkCpnsController;
 use App\Http\Controllers\PegawaiController;
@@ -43,4 +44,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/export-sknonpns', [SkNonPnsController::class, 'export'])->name('export-sknonpns');
     Route::view('/skpns','sk-pnss');
     Route::get('/export-skpns', [SkPnsController::class, 'export'])->name('export-skpns');
+    Route::view('/skkgb','sk-kgbs');
+    Route::get('/export-skkgb', [SkKgbController::class, 'export'])->name('export-skkgb');
 });

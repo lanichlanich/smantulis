@@ -1,13 +1,13 @@
 @extends('adminlte::page')
 
-@section('title', 'SK Non PNS')
+@section('title', 'SK KGB')
 
 @section('content_header')
-    <h1>Daftar SK Non PNS</h1>
+    <h1>Daftar SK KGB</h1>
 @stop
 
 @section('content')
-    @livewire('sk-non-pns')
+    @livewire('sk-kgb')
 @stop
 
 @section('css')
@@ -22,11 +22,11 @@
     </script>
     @livewireScripts
     <script type="text/javascript">
-        window.livewire.on('sknonpnsStore', () => {
+        window.livewire.on('skkgbStore', () => {
             $('#exampleModal').modal('hide');
         });
 
-        window.livewire.on('sknonpnsUpdate', () => {
+        window.livewire.on('skkgbUpdate', () => {
             $('#updateModal').modal('hide');
         });
 

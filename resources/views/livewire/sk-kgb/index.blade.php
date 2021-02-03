@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-header">
 
-        @include('livewire.sk-non-pns.create')
-        @include('livewire.sk-non-pns.update')
+        @include('livewire.sk-kgb.create')
+        @include('livewire.sk-kgb.update')
         @if (session()->has('message'))
             <div class="alert alert-success" style="margin-top:30px;">
                 {{ session('message') }}
@@ -16,25 +16,32 @@
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Nama NON PNS</th>
-                    <th>No SK NON PNS</th>
+                    <th>Nama PNS</th>
+                    <th>No SK CPNS</th>
                     <th>Tanggal SK</th>
                     <th>TMT SK</th>
+                    <th>KGB Berikutnya</th>
+                    <th>Pangkat/Golongan</th>
+                    <th>Masa Kerja</th>
+                    <th>Gaji Pokok</th>
                     <th>Softfile</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($sknonpnss as $index => $value)
+                @foreach ($skkgbs as $index => $value)
                     <tr>
-                        <td>{{ $value->nama_non_pns }}</td>
+                        <td>{{ $value->nama_pns }}</td>
                         <td>
                             <h5><span class="badge badge-success">{{ $value->no_sk }}</span></h5>
                         </td>
                         <td><span class="badge badge-info">{{ $value->tgl_sk }}</span></td>
                         <td><span class="badge badge-info">{{ $value->tmt_sk }}</span></td>
-                        <td>
-                            <a href="{{ asset('storage/SkNonPns/' . $value->softfile) }}" alt="Softfile" target="_blank"
+                        <td><span class="badge badge-info">{{ $value->kgb_yad }}</span></td>
+                        <td><span class="badge badge-info">{{ $value->golongan }}</span></td>
+                        <td><span class="badge badge-info">{{ $value->masa_kerja }}</span></td>
+                        <td><span class="badge badge-info">{{ $value->gaji_pokok }}</span></td>
+                        <td><a href="{{ asset('storage/SkKgb/' . $value->softfile) }}" alt="Softfile" target="_blank"
                                 class="btn btn-outline-danger btn-sm mb-1"><i class="fas fa-fw fa-download"></i>
                                 Softfile</a>
                         </td>
@@ -52,6 +59,6 @@
     </div>
     <div class="card-footer">
 
-        {{ $sknonpnss->links() }}
+        {{ $skkgbs->links() }}
     </div>
 </div>

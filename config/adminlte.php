@@ -126,7 +126,7 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-primary elevation-4',
+    'classes_sidebar' => 'sidebar-light-info elevation-4',
     'classes_sidebar_nav' => '',
     'classes_topnav' => 'navbar-white navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
@@ -287,6 +287,11 @@ return [
                     'text' => 'SK PNS',
                     'icon'    => 'fas fa-fw fa-file',
                     'url'  => 'skpns',
+                ],
+                [
+                    'text' => 'SK KGB',
+                    'icon'    => 'fas fa-fw fa-file',
+                    'url'  => 'skkgb',
                 ],
                 [
                     'text' => 'SK Non PNS',

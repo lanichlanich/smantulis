@@ -69,7 +69,7 @@ class SkNonPns extends Component
                 'softfile' => $softName,
             ]);
 
-        session()->flash('message', 'SK NON CPNS berhasil di input');
+        session()->flash('message', 'SK NON PNS berhasil di input');
 
         $this->resetInputFields();
 
@@ -127,7 +127,7 @@ class SkNonPns extends Component
             ]);
             $this->updateMode = false;
             $this->emit('sknonpnsUpdate'); // Close model to using to jquery
-            session()->flash('message', 'SK NON CPNS berhasil di Update');
+            session()->flash('message', 'SK NON PNS berhasil di Update');
             $this->resetInputFields();
 
         }
@@ -137,12 +137,12 @@ class SkNonPns extends Component
     {
         if($id){
             SkNonPnsModel::where('id',$id)->delete();
-            session()->flash('message', 'SK NON CPNS berhasil di Hapus!');
+            session()->flash('message', 'SK NON PNS berhasil di Hapus!');
         }
     }
 
     public function export() 
     {
-        return Excel::download(new SkNonPnsExport, 'SK NON CPNS.xlsx');
+        return Excel::download(new SkNonPnsExport, 'SK NON PNS.xlsx');
     }
 }
