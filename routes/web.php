@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\SkKbmController;
 use App\Http\Controllers\SkKgbController;
 use App\Http\Controllers\SkPnsController;
@@ -46,4 +47,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/export-skpns', [SkPnsController::class, 'export'])->name('export-skpns');
     Route::view('/skkgb','sk-kgbs');
     Route::get('/export-skkgb', [SkKgbController::class, 'export'])->name('export-skkgb');
+
+    Route::get('artikel', [PostController::class, 'index']);
+    Route::get('posts', [PostController::class, 'create']);
+Route::post('posts', [PostController::class, 'store']);
+Route::get('posts/{slug}', [PostController::class, 'show']);
 });
