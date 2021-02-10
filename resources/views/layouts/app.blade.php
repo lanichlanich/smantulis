@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../vendor/adminlte/dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-info">
+<body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-navy">
     <div class="wrapper">
         <nav class="main-header navbar navbar-expand-md navbar-light fixed-top">
             <div class="container">
@@ -33,16 +33,20 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Rombongan Belajar</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Rombongan Belajar</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Kesiswaan</a>
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle bg-light text-info rounded">Kesiswaan</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
@@ -56,9 +60,11 @@
                                         aria-haspopup="true" aria-expanded="false"
                                         class="dropdown-item dropdown-toggle bg-light text-info rounded">Ekstakurikuler</a>
                                     <ul aria-labelledby="dropdownSubMenu2" class="p-1 dropdown-menu border-0 shadow">
-                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Pramuka</a></li>
+                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Pramuka</a>
+                                        </li>
                                         <li><a href="#" class="dropdown-item bg-light text-info rounded">PMR</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Paskibra</a></li>
+                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Paskibra</a>
+                                        </li>
                                         <!-- <li><a href="#" class="dropdown-item bg-light">Basket</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Voli</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Futsal</a></li>
@@ -74,18 +80,21 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Sarana & Prasarana</a>
+                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Sarana
+                                & Prasarana</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Sarana</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Prasarana</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Prasarana</a>
+                                </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Perpustakaan</a></li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Laboratoriom</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Hubungan Masyarakat</a>
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle bg-light text-info rounded">Hubungan Masyarakat</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Pendataan PIP</a></li>
@@ -94,14 +103,18 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Tenaga Pendidik</a>
+                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Tenaga
+                                Pendidik</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Wakil Kepala Sekolah</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru Mata Pelajaran</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Wakil Kepala
+                                        Sekolah</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru Mata Pelajaran</a>
+                                </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru BK</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi Sekolah</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi
+                                        Sekolah</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -116,12 +129,12 @@
             </div>
         </nav>
 
-        
-
-@yield('content')
 
 
-        
+        @yield('content')
+
+
+
 
         <footer class="main-footer mt-5">
             <div class="container py-5">

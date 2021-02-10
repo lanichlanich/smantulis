@@ -10,8 +10,9 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts= Post::latest()->paginate(10);
+        $posts= Post::latest()->paginate(5);
         return view('post.index', ['posts' => $posts]);
+        // ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function previewImage()
@@ -49,7 +50,7 @@ class PostController extends Controller
             $post->save(); // Finally, save the record.
         }
    
-        return redirect()->back();
+        return redirect('artikel');
     }
 
     public function show(Post $slug)
@@ -57,5 +58,26 @@ class PostController extends Controller
 
 
         return view('display', compact('slug'));
+    }
+
+    public function edit()
+    {
+        return view('post.edit');
+    }
+
+    public function destroy(Post $slug)
+    {
+        
+        $blog = Post::findOrFail($slug);
+        //Storage::disk('local')->delete('public/posts/'.$post->image);
+        $blog->delete();
+
+        if($blog){
+            //redirect dengan pesan sukses
+            return redirect()->route('post.index')->with(['success' => 'Data Berhasil Dihapus!']);
+        }else{
+            //redirect dengan pesan error
+            return redirect()->route('post.index')->with(['error' => 'Data Gagal Dihapus!']);
+        }
     }
 }

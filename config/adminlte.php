@@ -241,6 +241,26 @@ return [
             'url'     => 'home',
         ],
         [
+            'text'    => 'Artikel',
+            'icon'    => 'fas fa-fw fa-user',
+            'url'     => '#',
+            'submenu' => [
+                [
+
+                    'text' => 'Buat Artikel',
+                    'icon'    => 'fas fa-fw fa-user',
+                    'url'  => 'posts',
+                ],
+                [
+
+                    'text' => 'Daftar Artikel',
+                    'icon'    => 'fas fa-fw fa-user',
+                    'url'  => 'artikel',
+                ],
+                
+            ]
+        ],
+        [
             'text'    => 'Kepegawaian',
             'icon'    => 'fas fa-fw fa-user',
             'url'     => '#',
