@@ -32,9 +32,21 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Foto Thumbnail</label>
-                                    <input type="text" name="foto" class="form-control" />
-                                </div>
+                                    <input type="file" name="file" class="form-control" />
 
+                                    
+                                        {{-- <label for="customFile">Foto</label>
+                                        <div class="custom-file">
+                                            <label class="custom-file-label">
+                                                @if ($foto)
+                                                    <a href="{{ $foto }}">Foto Terupload</a>
+                                                @endif
+                                            </label>
+                                            <input name="foto" type="file" >
+                                            @error('foto') <small class="text-danger">{{ $message }}</small> @enderror
+                                        </div> --}}
+                                    
+                                </div>
                             </div>
                         </div>
                         <div class="form-group">

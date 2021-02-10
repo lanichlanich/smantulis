@@ -6,6 +6,7 @@ use App\Http\Controllers\SkKbmController;
 use App\Http\Controllers\SkKgbController;
 use App\Http\Controllers\SkPnsController;
 use App\Http\Controllers\SkCpnsController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SuratInController;
 use App\Http\Controllers\SkNonPnsController;
@@ -22,9 +23,6 @@ use App\Http\Controllers\SuratOutController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
@@ -49,7 +47,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/export-skkgb', [SkKgbController::class, 'export'])->name('export-skkgb');
 
     Route::get('artikel', [PostController::class, 'index']);
+    Route::post('posts', [PostController::class, 'store']);
+    Route::get('posts/{slug}', [PostController::class, 'show']);
     Route::get('posts', [PostController::class, 'create']);
-Route::post('posts', [PostController::class, 'store']);
-Route::get('posts/{slug}', [PostController::class, 'show']);
 });
+
+Route::get('/', [LandingController::class, 'index']);
