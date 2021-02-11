@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-    {{ isset($slot) ? $slot : null }}
+    {{-- {{ isset($slot) ? $slot : null }} --}}
     <div class="row">
         <div class="col-md-12">
             <div class="card">
@@ -15,18 +15,18 @@
                     <h6 class="text-white">Buat Postingan Baru</h6>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="{{ url('posts') }}" enctype="multipart/form-data">
+                    <form method="put" action="{{ route('post.update', $post->id) }}" enctype="multipart/form-data">
                         @csrf
                         <div class="form-group">
                             <label>Judul Postingan</label>
-                            <input type="text" name="judul" class="form-control" value="{{ old('judul') }}" />
+                            <input type="text" name="judul" class="form-control" value="{{ $post->judul }}" />
                             @error('judul') <span class="text-danger error">{{ $message }}</span>@enderror
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Tag</label>
-                                    <input type="text" name="tag" class="form-control" value="{{ old('tag') }}" />
+                                    <input type="text" name="tag" class="form-control" value="{{ $post->tag }}" />
                                     @error('tag') <span class="text-danger error">{{ $message }}</span>@enderror
                                 </div>
 
@@ -34,7 +34,7 @@
                             <div class="col-6">
                                 <div class="form-group">
                                     <label>Foto Thumbnail</label>
-                                    <input type="file" name="file" class="form-control" value="{{ old('file') }}" />
+                                    <input type="file" name="file" class="form-control" />
                                     @error('file') <span class="text-danger error">{{ $message }}</span>@enderror
 
 
@@ -54,12 +54,12 @@
                         </div>
                         <div class="form-group">
                             <label>Deskripsi Singkat</label>
-                            <input type="text" name="des_singkat" class="form-control" value="{{ old('des_singkat') }}" />
+                            <input type="text" name="des_singkat" class="form-control" value="{{ $post->des_singkat }}" />
                             @error('des_singkat') <span class="text-danger error">{{ $message }}</span>@enderror
                         </div>
                         <div class="form-group">
                             <label><strong>Isi Postingan :</strong></label>
-                            <textarea class="summernote" name="isi_post" id="summernote">{{ old('isi_post') }}</textarea>
+                            <textarea class="summernote" name="isi_post" id="summernote">{{ $post->isi_post }}</textarea>
                             @error('isi_post') <span class="text-danger error">{{ $message }}</span>@enderror
                         </div>
                         <div class="row">

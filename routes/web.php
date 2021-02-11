@@ -6,6 +6,7 @@ use App\Http\Controllers\SkKbmController;
 use App\Http\Controllers\SkKgbController;
 use App\Http\Controllers\SkPnsController;
 use App\Http\Controllers\SkCpnsController;
+use App\Http\Controllers\HalamanController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\SuratInController;
@@ -24,7 +25,9 @@ use App\Http\Controllers\SuratOutController;
 */
 
 
-Auth::routes();
+Auth::routes([
+    'register' => false
+]);
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -48,12 +51,14 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('posts', [PostController::class, 'index'])->name('posts');
     Route::post('posts', [PostController::class, 'store']);
-    Route::get('posts/{slug}', [PostController::class, 'show']);
     Route::get('post', [PostController::class, 'create'])->name('post.create');
-    Route::get('post-edit', [PostController::class, 'edit'])->name('post.edit');
+    Route::get('edit-post/{id}', [PostController::class, 'edit'])->name('post-edit');
+    Route::put('posts', [PostController::class, 'update'])->name('post.update');
     Route::delete('posts', [PostController::class, 'destroy'])->name('post.destroy');
     
     
 });
 
 Route::get('/', [LandingController::class, 'index']);
+Route::get('info-surat-keluar', [HalamanController::class, 'SuratKeluar']);
+Route::get('posts/{slug}', [PostController::class, 'show']);

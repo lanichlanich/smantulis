@@ -48,10 +48,10 @@
                         </select>
                         @error('semester') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" wire:ignore>
                         <label for="exampleFormControlInput5">Keterangan</label>
-                        <textarea class="form-control" id="exampleFormControlInput5" placeholder="Keterangan"
-                            wire:model="keterangan"></textarea>
+                        <textarea class="form-control" id="summernote" placeholder="Keterangan" wire:model="keterangan"
+                            name="keterangan"></textarea>
                         @error('keterangan') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">

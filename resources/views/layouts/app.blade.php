@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SMANTULIS</title>
     <link rel="stylesheet" href="../vendor/adminlte/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
 </head>
 
 <body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-navy">
@@ -94,9 +97,12 @@
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded">Hubungan Masyarakat</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded">Informasi Digital</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
+                                <li><a href="/info-surat-keluar" class="dropdown-item bg-light text-info rounded">Arsip
+                                        Surat Keluar</a>
+                                </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Pendataan PIP</a></li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Info PIP</a></li>
                             </ul>
@@ -110,9 +116,9 @@
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Wakil Kepala
                                         Sekolah</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru Mata Pelajaran</a>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
                                 </li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru BK</a></li>
+                                {{-- <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru BK</a></li> --}}
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi
                                         Sekolah</a></li>
                             </ul>

@@ -59,7 +59,6 @@
                             <option value="Guru">Guru</option>
                             <option value="Tenaga Administrasi">Tenaga Administrasi</option>
                             <option value="Kepala Sekolah">Kepala Sekolah</option>
-                            <option value="Kasubag TU">Kasubag TU</option>
                         </select>
                         @error('jenis_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>

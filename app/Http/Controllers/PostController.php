@@ -30,12 +30,19 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        if ($request->hasFile('file')) {
+        $request->validate([
+            'judul' => 'required',
+            'des_singkat' => 'required',
+            'foto' => 'required',
+            'tag' => 'required',
+            'file' => 'required',
+        ]);
 
+        if ($request->hasFile('file')) {
+            
             $request->validate([
                 'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
             ]);
-
             // Save the file locally in the storage/public/ folder under a new folder named /post
             $request->file->store('post', 'public');
 
@@ -51,20 +58,53 @@ class PostController extends Controller
             $post->save(); // Finally, save the record.
         }
    
-        return redirect('posts');
+        return redirect('post')->withInput();
     }
 
     public function show(Post $slug)
     {   
-
-
         return view('display', compact('slug'));
     }
 
-    // public function edit()
-    // {
-    //     return view('post.edit');
-    // }
+    public function edit(Request $post)
+    {
+        $post = Post::where('id',$post->id)->first();
+        return view('post.edit', ['post' => $post]);
+    }
+ 
+    public function update(Request $request)
+    {
+        $request->validate([
+            'judul' => 'required',
+            'des_singkat' => 'required',
+            'foto' => 'required',
+            'tag' => 'required',
+            'file' => 'required',
+        ]);
+
+        if ($request->hasFile('file')) {
+            
+            $request->validate([
+                'image' => 'mimes:jpeg,bmp,png' // Only allow .jpg, .bmp and .png file types.
+            ]);
+            // Save the file locally in the storage/public/ folder under a new folder named /post
+            $request->file->store('post', 'public');
+
+            // Store the record, using the new file hashname which will be it's new filename identity.
+            $post = new Post([
+                'slug' => Str::slug($request->judul,'-'),
+                'judul' => $request->judul,
+                'des_singkat' => $request->des_singkat,
+                'foto' => $request->file->hashName(),
+                'tag' => $request->tag,
+                'isi_post' => $request->isi_post,
+            ]);
+
+            $post->update($request->all());
+        }
+   
+        return redirect('edit')->withInput();
+    }
 
     // public function destroy(Post $id)
     // {
