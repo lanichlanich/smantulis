@@ -10,6 +10,7 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = ['judul','slug','foto','tag','des_singkat','isi_post'];
+
     public function sluggable()
     {
         return [
@@ -18,8 +19,9 @@ class Post extends Model
             ]
         ];
     }
+
     public function getRouteKeyName()
-{
-    return 'slug';
-}
+    {
+        return 'slug';
+    }
 }

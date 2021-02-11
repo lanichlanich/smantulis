@@ -46,12 +46,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::view('/skkgb','sk-kgbs');
     Route::get('/export-skkgb', [SkKgbController::class, 'export'])->name('export-skkgb');
 
-    Route::get('posts', [PostController::class, 'index'])->name('post');
+    Route::get('posts', [PostController::class, 'index'])->name('posts');
     Route::post('posts', [PostController::class, 'store']);
     Route::get('posts/{slug}', [PostController::class, 'show']);
-    Route::get('post', [PostController::class, 'create']);
+    Route::get('post', [PostController::class, 'create'])->name('post.create');
     Route::get('post-edit', [PostController::class, 'edit'])->name('post.edit');
-    Route::delete('post-destroy/{slug}', [PostController::class, 'destroy'])->name('post.destroy');
+    Route::delete('posts', [PostController::class, 'destroy'])->name('post.destroy');
     
     
 });

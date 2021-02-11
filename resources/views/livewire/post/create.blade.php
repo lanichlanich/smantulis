@@ -1,11 +1,11 @@
-<button type="button" class="btn btn-primary mb-1" data-toggle="modal" data-target="#exampleModal">
+{{-- <button type="button" class="btn btn-primary mb-1" data-toggle="modal" data-target="#exampleModal">
     <i class="fas fa-fw fa-plus"></i> Tambah Data
 </button>
 <a class="btn btn-outline-success mb-1" href="{{ route('export-pegawai') }}"><i
         class="fa fa-fw fa-file-excel"></i>Export
     Daftar
-    Pegawai
-    (Excel)</a>
+    Postingan
+    (Excel)</a> --}}
 
 <!-- Modal -->
 <div wire:ignore.self class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
@@ -21,19 +21,10 @@
             <div class="modal-body">
                 <form enctype="multipart/form-data">
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Nama Lengkap</label>
+                        <label for="exampleFormControlInput1">Judul</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Nama"
-                            wire:model="nama">
-                        @error('nama') <span class="text-danger error">{{ $message }}</span>@enderror
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput4">Jenis Kelamin</label>
-                        <select id="exampleFormControlInput4" wire:model="jk" class="form-control">
-                            <option value="-">-</option>
-                            <option value="L">Laki - laki</option>
-                            <option value="P">Perempuan</option>
-                        </select>
-                        @error('jk') <span class="text-danger error">{{ $message }}</span>@enderror
+                            wire:model="judul">
+                        @error('judul') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput2">NIK</label>

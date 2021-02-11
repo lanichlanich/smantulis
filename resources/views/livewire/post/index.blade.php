@@ -30,13 +30,13 @@
                             <img src="{{ asset('storage/Post/' . $value->foto) }}" alt="Foto {{ $value->judul }}"
                                 class="rounded img-thumbnail mx-auto d-block" style="height: 80px; width:60px">
                         </td>
-                        <td>{{ $value->foto }}</td>
+                        
                         <td>{{ $value->judul }}</td>
                         <td>{{ $value->tag }}</td>
                         <td>{{ $value->des_singkat }}</td>
                         <td>
-                            <button data-toggle="modal" data-target="#updateModal" wire:click="edit({{ $value->id }})"
-                                class="btn btn-warning btn-sm mb-1"><i class="fa fa-magic"></i> Edit</button>
+                            {{-- <button data-toggle="modal" data-target="#updateModal" wire:click="edit({{ $value->id }})"
+                                class="btn btn-warning btn-sm mb-1"><i class="fa fa-magic"></i> Edit</button> --}}
                             <button onclick="return confirm('Apakah Anda yakin?') || event.stopImmediatePropagation()"
                                 wire:click="delete({{ $value->id }})" class="btn btn-danger btn-sm mb-1"><i
                                     class="fa fa-fw fa-trash"></i>

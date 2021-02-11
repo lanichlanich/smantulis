@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Post;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -41,16 +42,16 @@ class PostController extends Controller
             // Store the record, using the new file hashname which will be it's new filename identity.
             $post = new Post([
                 'slug' => Str::slug($request->judul,'-'),
-            'judul' => $request->judul,
-            'des_singkat' => $request->des_singkat,
-            'foto' => $request->file->hashName(),
-            'tag' => $request->tag,
-            'isi_post' => $request->isi_post,
+                'judul' => $request->judul,
+                'des_singkat' => $request->des_singkat,
+                'foto' => $request->file->hashName(),
+                'tag' => $request->tag,
+                'isi_post' => $request->isi_post,
             ]);
             $post->save(); // Finally, save the record.
         }
    
-        return redirect('artikel');
+        return redirect('posts');
     }
 
     public function show(Post $slug)
@@ -60,24 +61,24 @@ class PostController extends Controller
         return view('display', compact('slug'));
     }
 
-    public function edit()
-    {
-        return view('post.edit');
-    }
+    // public function edit()
+    // {
+    //     return view('post.edit');
+    // }
 
-    public function destroy(Post $slug)
-    {
+    // public function destroy(Post $id)
+    // {
         
-        $blog = Post::findOrFail($slug);
-        //Storage::disk('local')->delete('public/posts/'.$post->image);
-        $blog->delete();
+    //     $post = DB::table('posts')->where('id',$id)->delete();
+    
+       
 
-        if($blog){
-            //redirect dengan pesan sukses
-            return redirect()->route('post.index')->with(['success' => 'Data Berhasil Dihapus!']);
-        }else{
-            //redirect dengan pesan error
-            return redirect()->route('post.index')->with(['error' => 'Data Gagal Dihapus!']);
-        }
-    }
+    //     if($post){
+    //         //redirect dengan pesan sukses
+    //         return redirect()->route('posts')->with(['success' => 'Data Berhasil Dihapus!']);
+    //     }else{
+    //         //redirect dengan pesan error
+    //         return redirect()->route('posts')->with(['error' => 'Data Gagal Dihapus!']);
+    //     }
+    // }
 }

@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Smantulis',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -249,13 +249,13 @@ return [
 
                     'text' => 'Buat Artikel',
                     'icon'    => 'fas fa-fw fa-user',
-                    'url'  => 'posts',
+                    'url'  => 'post',
                 ],
                 [
 
                     'text' => 'Daftar Artikel',
                     'icon'    => 'fas fa-fw fa-user',
-                    'url'  => 'artikel',
+                    'url'  => 'posts',
                 ],
                 
             ]

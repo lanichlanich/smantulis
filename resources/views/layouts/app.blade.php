@@ -169,7 +169,7 @@
                         <h6 class="text-uppercase font-weight-bold mb-4">Admin</h6>
                         <ul class="list-unstyled mb-0">
                             <li class="mb-2"><a href="/login" class="text-muted">Login</a></li>
-                            <li class="mb-2"><a href="#" class="text-muted">Regsiter</a></li>
+                            <li class="mb-2"><a href="/register" class="text-muted">Register</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-lg-0">
