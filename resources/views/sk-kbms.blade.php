@@ -38,12 +38,6 @@
             $('#summernote').summernote({
                 height: 250,
             })
-
-            // CodeMirror
-            CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
-                mode: "htmlmixed",
-                theme: "monokai"
-            });
         });
 
     </script>

@@ -257,6 +257,12 @@ return [
                     'icon'    => 'fas fa-fw fa-user',
                     'url'  => 'posts',
                 ],
+                [
+
+                    'text' => 'Halaman',
+                    'icon'    => 'fas fa-fw fa-user',
+                    'url'  => 'page',
+                ],
                 
             ]
         ],
@@ -278,6 +284,7 @@ return [
             
             'text'    => 'Arsip Surat',
             'icon'    => 'fas fa-fw fa-file-archive',
+            'url'     => '#',
             'submenu' => [
                 
                         [

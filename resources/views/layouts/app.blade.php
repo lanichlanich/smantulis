@@ -12,9 +12,9 @@
         crossorigin="anonymous" />
 </head>
 
-<body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-navy">
+<body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-light">
     <div class="wrapper">
-        <nav class="main-header navbar navbar-expand-md navbar-light fixed-top">
+        <nav class="main-header navbar navbar-expand-md navbar-light fixed-top mb-5">
             <div class="container">
                 <a href="#" class="navbar-brand">
                     <img src="../vendor/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
@@ -113,8 +113,10 @@
                                 Pendidik</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Wakil Kepala
+                                <li><a href="/pages/kepala-sekolah"
+                                        class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
+                                <li><a href="/pages/wakil-kepala-sekolah"
+                                        class="dropdown-item bg-light text-info rounded">Wakil Kepala
                                         Sekolah</a></li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
                                 </li>

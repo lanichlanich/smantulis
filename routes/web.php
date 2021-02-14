@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SkKbmController;
 use App\Http\Controllers\SkKgbController;
@@ -56,9 +57,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::put('posts', [PostController::class, 'update'])->name('post.update');
     Route::delete('posts', [PostController::class, 'destroy'])->name('post.destroy');
     
-    
+    Route::view('/page','pages');
+    Route::get('/export-page', [PageController::class, 'export'])->name('export-page');
 });
 
 Route::get('/', [LandingController::class, 'index']);
 Route::get('info-surat-keluar', [HalamanController::class, 'SuratKeluar']);
 Route::get('posts/{slug}', [PostController::class, 'show']);
+Route::get('pages/{slug}', [PageController::class, 'show']);

@@ -1,8 +1,8 @@
 <div class="card">
     <div class="card-header">
 
-        @include('livewire.post.create')
-        @include('livewire.post.update')
+        @include('livewire.page.create')
+        @include('livewire.page.update')
         @if (session()->has('message'))
             <div class="alert alert-success" style="margin-top:30px;">
                 {{ session('message') }}
@@ -11,7 +11,6 @@
                 </button>
             </div>
         @endif
-        <a href="/post" class="btn btn-success">Buat Artikel Baru</a>
     </div>
     <div class="card-body table-responsive">
         <table class="table table-bordered table-hover table-striped">
@@ -19,24 +18,23 @@
                 <tr>
                     <th>Foto</th>
                     <th>Judul</th>
-                    <th>Tag</th>
-                    <th>Deskripsi Singkat</th>
+                    <th>Slug</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($posts as $index => $value)
+                @foreach ($pages as $index => $value)
                     <tr>
                         <td>
-                            <img src="{{ asset('storage/Post/' . $value->foto) }}" alt="Foto {{ $value->judul }}"
-                                class="rounded img-thumbnail mx-auto d-block" style="height: 80px; width:160px">
+                            <img src="{{ asset('storage/page/' . $value->foto) }}" alt="Foto {{ $value->nama }}"
+                                class="rounded img-thumbnail mx-auto d-block" style="height: 80px; width:60px">
                         </td>
-
                         <td>{{ $value->judul }}</td>
-                        <td>{{ $value->tag }}</td>
-                        <td>{{ $value->des_singkat }}</td>
+                        <td>{{ $value->slug }}</td>
                         <td>
-                            {{-- <a class="btn btn-primary btn-sm" href="{{ route('post-edit', $value->id) }}">Edit</a> --}}
+                            <button data-toggle="modal" data-target="#updateModal"
+                                wire:click="edit({{ $value->id }})" class="btn btn-warning btn-sm mb-1"><i
+                                    class="fa fa-magic"></i> Edit</button>
                             <button onclick="return confirm('Apakah Anda yakin?') || event.stopImmediatePropagation()"
                                 wire:click="delete({{ $value->id }})" class="btn btn-danger btn-sm mb-1"><i
                                     class="fa fa-fw fa-trash"></i>
@@ -49,6 +47,6 @@
     </div>
     <div class="card-footer">
 
-        {{ $posts->links() }}
+        {{ $pages->links() }}
     </div>
 </div>
