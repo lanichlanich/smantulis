@@ -55,12 +55,17 @@
     <div class="container mt-4 bg-white pb-2">
         <div class="row justify-content-center">
             <div class="col-md-9 row mt-3">
+                <div class="col-md-12 p-1"><h2 class="ml-3 pb-2">BERITA TERBARU</h2></div>
                 @foreach ($posts as $value)
-                    <div class="col-sm col-md-4 border-0 mb-2">
-                        <img class="card-img-top" src="{{ '../storage/post/' . $value->foto }}" alt="Card image cap"
+                    <div class="col-sm col-md-6 border-0 mb-2">
+                        <a href="{{ 'posts/' . $value->slug }}">
+                            <img class="card-img-top" src="{{ '../storage/post/' . $value->foto }}" alt="Card image cap"
                             style="object-fit: cover; height:150px">
+                        </a>
                         <div class="card-body bg-gradient-light text-dark">
-                            <h5 class="card-title font-weight-bold mb-1">{{ $value->judul }}</h5>
+                            <a href="{{ 'posts/' . $value->slug }}">
+                                <h5 class="card-title font-weight-bold mb-1">{{ $value->judul }}</h5>
+                            </a>
                             <p class="card-text font-weight-light">{{ $value->des_singkat }}</p>
                             <a href="{{ 'posts/' . $value->slug }}" class="btn btn-sm btn-outline-info">Lanjut Baca
                                 ...</a>
@@ -69,34 +74,39 @@
                 @endforeach
             </div>
             <div class="col-md-3">
-                <div class="card card-warning mt-3">
-                    <div class="card-header">Info terkini</div>
-                    <div class="card-body p-4">
-                        <button type="button" class="btn btn-block bg-gradient-info btn-sm">Pendataan Awal PPDB
+                <div class="card card-outline card-warning mt-3">
+                    <div class="card-header"><h5>INFO TERKINI</h5></div>
+                    <div class="card-body p-3">
+                        <button type="button" class="btn btn-block btn-warning shadow">PPDB
                             2021</button>
-                        <button type="button" class="btn btn-block bg-gradient-info btn-sm">Pendataan
+                        <button type="button" class="btn btn-block btn-warning shadow">Pendataan
                             KIP 2021</button>
-                        <button type="button" class="btn btn-block bg-gradient-info btn-sm">Pendataan Hobi &
+                        <button type="button" class="btn btn-block btn-warning shadow">Pendataan Hobi &
                             Cita-cita</button>
-                        <button type="button" class="btn btn-block bg-gradient-info btn-sm">Bonrue Culture
+                        <button type="button" class="btn btn-block btn-warning shadow">Bonrue Culture
                             Festival</button>
-                        <button type="button" class="btn btn-block bg-gradient-info btn-sm">Porak 2021</button>
+                        <button type="button" class="btn btn-block btn-warning shadow">Porak 2021</button>
                     </div>
 
                 </div>
-                <div class="card card-success">
-                    <div class="card-header">Visi</div>
-                    <div class="card-body p-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore est, maxime numquam
-                        magni minus harum la
+                <div class="card card-outline card-info">
+                    <div class="card-header"><h5 class="text-center">VISI</h5></div>
+                    <div class="card-body p-4 bg-info">
+                        <p class="font-weight-bold text-center">Sekolah yang berprestasi, berbudaya dan berdaya saing di tahun 2021</p>
+
+{{-- <p>Untuk merealisasikan keinginan harapan, cita-cita serta tujuan yang tertuang dalam visi yang telah ditetapkan, maka SMA Negeri 1 Haurgeulis beserta stakeholder harus memahami makna dari visi tersebut yang tertuang dalam beberapa indikator sebagai berikut :</p> --}}
+<a href="/visi-misi" class="btn btn-block btn-info bg-gradient-warning"><span class="text-dark">Visi & Misi</span></a>
                     </div>
 
                 </div>
-                <div class="card card-info">
-                    <div class="card-header">Misi</div>
-                    <div class="card-body p-4">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore est, maxime numquam
-                        magni minus harum la
+                <div class="card card-outline card-info">
+                    <div class="card-header"><h5 class="text-center">INDIKATOR VISI</h5></div>
+                    <div class="card-body p-4 bg-info">
+                        <p >1.	Mampu memenuhi SNP dengan maksimal</p>
+<p>2.	Mampu mewujudkan budaya karakter bangsa melalui keteladanan dan pembiasaan di sekolah.</p>
+<p>3.	Mampu memelihara budaya, komitmen dan komunikasi yang efektif</p>
+<p>4.	Mampu berkompetisi akademik dan non akademik baik lokal maupun global.</p>
+
                     </div>
 
                 </div>

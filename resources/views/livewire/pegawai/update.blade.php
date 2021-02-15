@@ -34,6 +34,18 @@
                         @error('nik') <span class="text-danger error">{{ $message }}</span>@enderror
                     </div>
                     <div class="form-group">
+                        <label for="nip">NIP</label>
+                        <input type="text" class="form-control" id="nip" placeholder="Masukan NIP"
+                            wire:model="nip">
+                        {{-- @error('nik') <span class="text-danger error">{{ $message }}</span>@enderror --}}
+                    </div>
+                    <div class="form-group">
+                        <label for="nuptk">NUPTK</label>
+                        <input type="text" class="form-control" id="nuptk" placeholder="Masukan nuptk"
+                            wire:model="nuptk">
+                        {{-- @error('nik') <span class="text-danger error">{{ $message }}</span>@enderror --}}
+                    </div>
+                    <div class="form-group">
                         <label for="exampleFormControlInput3">Tanggal Lahir</label>
                         <input type="date" id="exampleFormControlInput3" wire:model="tgl_lahir" class="form-control">
                         @error('tgl_lahir') <span class="text-danger error">{{ $message }}</span>@enderror

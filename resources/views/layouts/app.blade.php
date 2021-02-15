@@ -12,7 +12,7 @@
         crossorigin="anonymous" />
 </head>
 
-<body class="hold-transition layout-top-nav bg-light text-dark padding-top bg-gradient-light">
+<body class="hold-transition layout-top-nav bg-light text-dark padding-top" style='background-image: url("/background-1.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll;'>
     <div class="wrapper">
         <nav class="main-header navbar navbar-expand-md navbar-light fixed-top mb-5">
             <div class="container">
@@ -40,7 +40,7 @@
                                 class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Rombongan Belajar</a>
+                                <li><a href="rombel" class="dropdown-item bg-light text-info rounded">Rombongan Belajar</a>
                                 </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a>
                                 </li>
@@ -52,8 +52,8 @@
                                 class="nav-link dropdown-toggle bg-light text-info rounded">Kesiswaan</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Osis</a></li>
+                                <li><a href="/pages/ppdb" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
+                                <li><a href="/pages/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
 
                                 <li class="dropdown-divider"></li>
 
@@ -63,10 +63,10 @@
                                         aria-haspopup="true" aria-expanded="false"
                                         class="dropdown-item dropdown-toggle bg-light text-info rounded">Ekstakurikuler</a>
                                     <ul aria-labelledby="dropdownSubMenu2" class="p-1 dropdown-menu border-0 shadow">
-                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Pramuka</a>
+                                        <li><a href="/pages/pramuka" class="dropdown-item bg-light text-info rounded">Pramuka</a>
                                         </li>
-                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">PMR</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light text-info rounded">Paskibra</a>
+                                        <li><a href="/pages/pmr" class="dropdown-item bg-light text-info rounded">PMR</a></li>
+                                        <li><a href="/pages/paskibra" class="dropdown-item bg-light text-info rounded">Paskibra</a>
                                         </li>
                                         <!-- <li><a href="#" class="dropdown-item bg-light">Basket</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Voli</a></li>
@@ -187,15 +187,15 @@
                             Barat 45264</p>
                         <ul class="list-inline mt-4">
                             <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
-                                        class="fab fa-2x fa-twitter"></i></a></li>
+                                        class="fab fa-2x fa-twitter text-info"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
-                                        class="fab fa-2x fa-facebook-f"></i></a></li>
+                                        class="fab fa-2x fa-facebook-f text-info"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
-                                        class="fab fa-2x fa-instagram"></i></a></li>
+                                        class="fab fa-2x fa-instagram text-info"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
-                                        class="fab fa-2x fa-youtube"></i></a></li>
+                                        class="fab fa-2x fa-youtube text-info"></i></a></li>
                             <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
-                                        class="fab fa-2x fa-google"></i></a></li>
+                                        class="fab fa-2x fa-google text-info"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -203,10 +203,10 @@
             <hr>
             <!-- To the right -->
             <div class="float-right d-none d-sm-inline">
-                Handcraft with love for SMANTULIS
+                Handcraft using Laravel with love for <strong>SMANTULIS</strong>
             </div>
             <!-- Default to the left -->
-            <strong>Copyright © 2021 by Farhany, S.Kom </strong> All rights reserved.
+            Copyright © 2021 by Farhany
         </footer>
         <!-- REQUIRED SCRIPTS -->
 

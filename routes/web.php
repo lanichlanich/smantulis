@@ -27,7 +27,7 @@ use App\Http\Controllers\SuratOutController;
 
 
 Auth::routes([
-    'register' => false
+    'register' => true
 ]);
 
 Route::group(['middleware' => ['auth']], function () {
@@ -63,5 +63,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/', [LandingController::class, 'index']);
 Route::get('info-surat-keluar', [HalamanController::class, 'SuratKeluar']);
+Route::get('rombel', [HalamanController::class, 'Rombel']);
+Route::get('visi-misi', [HalamanController::class, 'VisiMisi']);
 Route::get('posts/{slug}', [PostController::class, 'show']);
 Route::get('pages/{slug}', [PageController::class, 'show']);

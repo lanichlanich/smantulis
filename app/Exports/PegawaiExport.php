@@ -27,6 +27,8 @@ class PegawaiExport implements FromCollection, WithHeadings
             'nik',
             'tgl_lahir',
             'tpt_lahir',
+            'nip',
+            'nuptk',
         ];
     }
 }
