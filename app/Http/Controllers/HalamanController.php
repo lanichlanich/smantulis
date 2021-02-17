@@ -22,4 +22,14 @@ class HalamanController extends Controller
     {
         return view('halaman.visi-misi');
     }
+
+    public function Kepsek()
+    {
+        return view('halaman.kepsek');
+    }
+
+    public function Ppdb()
+    {
+        return view('halaman.ppdb');
+    }
 }

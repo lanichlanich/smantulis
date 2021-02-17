@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/export-skkgb', [SkKgbController::class, 'export'])->name('export-skkgb');
 
     Route::get('posts', [PostController::class, 'index'])->name('posts');
-    Route::post('posts', [PostController::class, 'store']);
+    Route::post('post', [PostController::class, 'store'])->name('post.store');
     Route::get('post', [PostController::class, 'create'])->name('post.create');
     Route::get('edit-post/{id}', [PostController::class, 'edit'])->name('post-edit');
     Route::put('posts', [PostController::class, 'update'])->name('post.update');
@@ -65,5 +65,7 @@ Route::get('/', [LandingController::class, 'index']);
 Route::get('info-surat-keluar', [HalamanController::class, 'SuratKeluar']);
 Route::get('rombel', [HalamanController::class, 'Rombel']);
 Route::get('visi-misi', [HalamanController::class, 'VisiMisi']);
+Route::get('kepala-sekolah', [HalamanController::class, 'Kepsek']);
+Route::get('ppdb', [HalamanController::class, 'Ppdb']);
 Route::get('posts/{slug}', [PostController::class, 'show']);
 Route::get('pages/{slug}', [PageController::class, 'show']);

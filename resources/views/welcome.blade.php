@@ -28,9 +28,9 @@
                 <h4 class="align-top">
 
                     <blockquote class="quote-danger bg-white">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio adipisci at omnis
-                            quos molestias nesciunt enim, nisi consequuntur veritatis, quis saepe iusto laboriosam beatae
-                            autem, quaerat a dolorem voluptatem?</p>
+                        <p class="bg-success py-2 rounded shadow-sm">Selamat datang di Website Resmi SMAN 1 Haurgeulis</p> 
+                        <p>SMAN 1 Haurgeulis Siap menjadi sekolah menengah yang berprestasi, berbudaya dan berdaya saing di tahun 2021</p>
+                        <p>School of Creator & Inovator</p>
                         <h5>Ambar Triwidodo, S.Pd</h5>
                     </blockquote>
                     {{-- <p>
@@ -77,15 +77,15 @@
                 <div class="card card-outline card-warning mt-3">
                     <div class="card-header"><h5>INFO TERKINI</h5></div>
                     <div class="card-body p-3">
-                        <button type="button" class="btn btn-block btn-warning shadow">PPDB
-                            2021</button>
-                        <button type="button" class="btn btn-block btn-warning shadow">Pendataan
+                        <a href="/ppdb" type="button" class="btn btn-block btn-warning shadow-sm">PPDB
+                            2021</a>
+                        <button type="button" class="btn btn-block btn-warning shadow-sm">Pendataan
                             KIP 2021</button>
-                        <button type="button" class="btn btn-block btn-warning shadow">Pendataan Hobi &
+                        <button type="button" class="btn btn-block btn-warning shadow-sm">Pendataan Hobi &
                             Cita-cita</button>
-                        <button type="button" class="btn btn-block btn-warning shadow">Bonrue Culture
+                        <button type="button" class="btn btn-block btn-warning shadow-sm">Bonrue Culture
                             Festival</button>
-                        <button type="button" class="btn btn-block btn-warning shadow">Porak 2021</button>
+                        <button type="button" class="btn btn-block btn-warning shadow-sm">Porak 2021</button>
                     </div>
 
                 </div>

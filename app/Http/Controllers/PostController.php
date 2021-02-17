@@ -33,7 +33,7 @@ class PostController extends Controller
         $request->validate([
             'judul' => 'required',
             'des_singkat' => 'required',
-            'foto' => 'required',
+            //'foto' => 'required',
             'tag' => 'required',
             'file' => 'required',
         ]);
@@ -58,7 +58,7 @@ class PostController extends Controller
             $post->save(); // Finally, save the record.
         }
    
-        return redirect('post')->withInput();
+        return redirect('posts')->withInput();
     }
 
     public function show(Post $slug)

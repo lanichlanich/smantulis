@@ -14,9 +14,9 @@
 
 <body class="hold-transition layout-top-nav bg-light text-dark padding-top" style='background-image: url("/background-1.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll;'>
     <div class="wrapper">
-        <nav class="main-header navbar navbar-expand-md navbar-light fixed-top mb-5">
+        <nav class="main-header navbar navbar-expand-md navbar-light fixed-top mb-5 md-auto">
             <div class="container">
-                <a href="#" class="navbar-brand">
+                <a href="/" class="navbar-brand ml-md-5">
                     <img src="../vendor/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
                         class="brand-image img-circle elevation-3 mr-2" style="opacity: .8 width:50px">
                     <span class="brand-text font-weight-light text-info">SMANTULIS</span>
@@ -32,7 +32,7 @@
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/" class="nav-link bg-light text-info rounded rounded">Home</a>
+                            <a href="/" class="ml-md-5  nav-link bg-light text-info rounded rounded">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
@@ -68,14 +68,15 @@
                                         <li><a href="/pages/pmr" class="dropdown-item bg-light text-info rounded">PMR</a></li>
                                         <li><a href="/pages/paskibra" class="dropdown-item bg-light text-info rounded">Paskibra</a>
                                         </li>
-                                        <!-- <li><a href="#" class="dropdown-item bg-light">Basket</a></li>
+                                        <li><a href="#" class="dropdown-item bg-light">Basket</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Voli</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Futsal</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Seni Rupa</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Seni Musik</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">Rohani Islam</a></li>
                                         <li><a href="#" class="dropdown-item bg-light">English Club</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Japanese Club</a></li> -->
+                                        <li><a href="#" class="dropdown-item bg-light">Japanese Club</a></li>
+                                        <li><a href="#" class="dropdown-item bg-light">Broadcasting</a></li>
                                     </ul>
                                 </li>
                                 <!-- End Level two -->
@@ -113,9 +114,9 @@
                                 Pendidik</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/pages/kepala-sekolah"
+                                <li><a href="/kepala-sekolah"
                                         class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
-                                <li><a href="/pages/wakil-kepala-sekolah"
+                                <li><a href="/wakil-kepala-sekolah"
                                         class="dropdown-item bg-light text-info rounded">Wakil Kepala
                                         Sekolah</a></li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
@@ -125,12 +126,12 @@
                                         Sekolah</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="#" class="nav-link bg-light text-info rounded">Tentang</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link bg-light text-info rounded">Kontak</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
 
