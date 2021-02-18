@@ -12,7 +12,30 @@ use Maatwebsite\Excel\Facades\Excel;
 
 class Pegawai extends Component
 {
-    public $foto, $nama, $jk, $nik, $tgl_lahir, $tpt_lahir, $nip, $nuptk, $jenis_ptk, $status_ptk, $pegawai_id;
+    public              
+        $nama,
+        $jk,
+        $nip,
+        $nuptk,
+        $tpt_lahir,
+        $tgl_lahir,
+        $ibu,
+        $jenis_ptk,
+        $status_ptk,
+        $foto,
+        $nik,
+        $kk,
+        $alamat,
+        $suami_istri,
+        $anak1,
+        $anak2,
+        $anak3,
+        $karpeg,
+        $bpjs,
+        $npwp,
+
+        $pegawai_id;
+            
     use WithPagination;
     use WithFileUploads;
     public $updateMode = false;
@@ -32,16 +55,26 @@ class Pegawai extends Component
     }
 
     private function resetInputFields(){
-        $this->foto = '';
         $this->nama = '';
         $this->jk = '';
-        $this->nik = '';
-        $this->tgl_lahir = '';
-        $this->tpt_lahir = '';
         $this->nip = '';
         $this->nuptk = '';
+        $this->tpt_lahir = '';
+        $this->tgl_lahir = '';
+        $this->ibu = '';
         $this->jenis_ptk = '';
         $this->status_ptk = '';
+        $this->foto = '';
+        $this->nik = '';
+        $this->kk = '';
+        $this->alamat = '';
+        $this->suami_istri = '';
+        $this->anak1 = '';
+        $this->anak2 = '';
+        $this->anak3 = '';
+        $this->karpeg = '';
+        $this->bpjs = '';
+        $this->npwp = '';
     }
 
     public function store()
@@ -66,16 +99,26 @@ class Pegawai extends Component
         
         $pegawai = new PegawaiModel;
             $pegawai->insert([
-                'foto' => $softName,
                 'nama' => $this->nama,
                 'jk' => $this->jk,
-                'nik' => $this->nik,
-                'tgl_lahir' => $this->tgl_lahir,
-                'tpt_lahir' => $this->tpt_lahir,
                 'nip' => $this->nip,
                 'nuptk' => $this->nuptk,
+                'tpt_lahir' => $this->tpt_lahir,
+                'tgl_lahir' => $this->tgl_lahir,
+                'ibu' => $this->ibu,
                 'jenis_ptk' => $this->jenis_ptk,
                 'status_ptk' => $this->status_ptk,
+                'foto' => $softName,
+                'nik' => $this->nik,
+                'kk' => $this->kk,
+                'alamat' => $this->alamat,
+                'suami_istri' => $this->suami_istri,
+                'anak1' => $this->anak1,
+                'anak2' => $this->anak2,
+                'anak3' => $this->anak3,
+                'karpeg' => $this->karpeg,
+                'bpjs' => $this->bpjs,
+                'npwp' => $this->npwp,
             ]);
 
         session()->flash('message', 'PTK berhasil di input');
@@ -91,16 +134,26 @@ class Pegawai extends Component
         $this->updateMode = true;
         $pegawai = PegawaiModel::where('id',$id)->first();
         $this->pegawai_id = $id;
-        $this->foto = '';
+
         $this->nama = $pegawai->nama;
-        $this->jk = $pegawai->jk;
-        $this->nik = $pegawai->nik;
-        $this->tgl_lahir = $pegawai->tgl_lahir;
-        $this->tpt_lahir = $pegawai->tpt_lahir;
         $this->nip = $pegawai->nip;
         $this->nuptk = $pegawai->nuptk;
+        $this->tpt_lahir = $pegawai->tpt_lahir;
+        $this->tgl_lahir = $pegawai->tgl_lahir;
+        $this->ibu = $pegawai->ibu;
         $this->jenis_ptk = $pegawai->jenis_ptk;
         $this->status_ptk = $pegawai->status_ptk;
+        $this->foto = '';
+        $this->nik = $pegawai->nik;
+        $this->kk = $pegawai->kk;
+        $this->alamat = $pegawai->alamat;
+        $this->suami_istri = $pegawai->suami_istri;
+        $this->anak1 = $pegawai->anak1;
+        $this->anak2 = $pegawai->anak2;
+        $this->anak3 = $pegawai->anak3;
+        $this->karpeg = $pegawai->karpeg;
+        $this->bpjs = $pegawai->bpjs;
+        $this->npwp = $pegawai->npwp;
         
     }
 
@@ -135,16 +188,26 @@ class Pegawai extends Component
         if ($this->pegawai_id) {
             $pegawai = PegawaiModel::find($this->pegawai_id);
             $pegawai->update([
-                'foto' => $softName,
                 'nama' => $this->nama,
                 'jk' => $this->jk,
-                'nik' => $this->nik,
-                'tgl_lahir' => $this->tgl_lahir,
-                'tpt_lahir' => $this->tpt_lahir,
                 'nip' => $this->nip,
                 'nuptk' => $this->nuptk,
+                'tpt_lahir' => $this->tpt_lahir,
+                'tgl_lahir' => $this->tgl_lahir,
+                'ibu' => $this->ibu,
                 'jenis_ptk' => $this->jenis_ptk,
                 'status_ptk' => $this->status_ptk,
+                'foto' => $softName,
+                'nik' => $this->nik,
+                'kk' => $this->kk,
+                'alamat' => $this->alamat,
+                'suami_istri' => $this->suami_istri,
+                'anak1' => $this->anak1,
+                'anak2' => $this->anak2,
+                'anak3' => $this->anak3,
+                'karpeg' => $this->karpeg,
+                'bpjs' => $this->bpjs,
+                'npwp' => $this->npwp,
             ]);
             $this->updateMode = false;
             $this->emit('pegawaiUpdate'); // Close model to using to jquery

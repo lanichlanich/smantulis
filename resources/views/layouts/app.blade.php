@@ -52,8 +52,8 @@
                                 class="nav-link dropdown-toggle bg-light text-info rounded">Kesiswaan</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/pages/ppdb" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
-                                <li><a href="/pages/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
+                                <li><a href="/ppdb" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
+                                <li><a href="/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
 
                                 <li class="dropdown-divider"></li>
 

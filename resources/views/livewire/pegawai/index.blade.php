@@ -20,6 +20,8 @@
                     <th>Nama Lengkap</th>
                     <th>JK</th>
                     <th>NIK</th>
+                    <th>NIP</th>
+                    <th>NUPTK</th>
                     <th>Tanggal Lahir</th>
                     <th>Tempat Lahir</th>
                     <th>Jenis PTK</th>
@@ -37,6 +39,8 @@
                         <td>{{ $value->nama }}</td>
                         <td>{{ $value->jk }}</td>
                         <td>{{ $value->nik }}</td>
+                        <td>{{ $value->nip }}</td>
+                        <td>{{ $value->nuptk }}</td>
                         <td>{{ $value->tgl_lahir }}</td>
                         <td>{{ $value->tpt_lahir }}</td>
                         <td>{{ $value->jenis_ptk }}</td>

@@ -15,16 +15,26 @@ class CreatePegawaisTable extends Migration
     {
         Schema::create('pegawais', function (Blueprint $table) {
             $table->id();
-            $table->string('foto');
             $table->string('nama');
             $table->string('jk');
-            $table->string('nik')->unique();
-            $table->date('tgl_lahir');
+            $table->string('nip')->nullable();
+            $table->string('nuptk')->nullable();
             $table->string('tpt_lahir');
-            $table->string('nip');
-            $table->string('nuptk');
+            $table->date('tgl_lahir');
+            $table->string('ibu')->nullable();
             $table->string('jenis_ptk');
             $table->string('status_ptk');
+            $table->string('foto');
+            $table->string('nik')->unique();
+            $table->string('kk')->nullable();
+            $table->string('alamat')->nullable();
+            $table->string('suami_istri')->nullable();
+            $table->string('anak1')->nullable();
+            $table->string('anak2')->nullable();
+            $table->string('anak3')->nullable();
+            $table->string('karpeg')->nullable();
+            $table->string('bpjs')->nullable();
+            $table->string('npwp')->nullable();
             $table->timestamps();
         });
     }

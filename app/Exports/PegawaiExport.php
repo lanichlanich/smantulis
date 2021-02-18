@@ -21,14 +21,26 @@ class PegawaiExport implements FromCollection, WithHeadings
     {
         return [
             '#',
-            'foto',
             'nama',
             'jk',
-            'nik',
-            'tgl_lahir',
-            'tpt_lahir',
             'nip',
             'nuptk',
+            'tpt_lahir',
+            'tgl_lahir',
+            'ibu',
+            'jenis_ptk',
+            'status_ptk',
+            'foto',
+            'nik',
+            'kk',
+            'alamat',
+            'suami_istri',
+            'anak1',
+            'anak2',
+            'anak3',
+            'karpeg',
+            'bpjs',
+            'npwp',
         ];
     }
 }
