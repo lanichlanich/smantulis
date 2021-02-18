@@ -242,25 +242,25 @@ return [
         ],
         [
             'text'    => 'Artikel',
-            'icon'    => 'fas fa-fw fa-user',
+            'icon'    => 'fas fa-fw fa-book',
             'url'     => '#',
             'submenu' => [
                 [
 
                     'text' => 'Buat Artikel',
-                    'icon'    => 'fas fa-fw fa-user',
+                    'icon'    => 'fas fa-fw fa-book',
                     'url'  => 'post',
                 ],
                 [
 
                     'text' => 'Daftar Artikel',
-                    'icon'    => 'fas fa-fw fa-user',
+                    'icon'    => 'fas fa-fw fa-book',
                     'url'  => 'posts',
                 ],
                 [
 
                     'text' => 'Halaman',
-                    'icon'    => 'fas fa-fw fa-user',
+                    'icon'    => 'fas fa-fw fa-book',
                     'url'  => 'page',
                 ],
                 

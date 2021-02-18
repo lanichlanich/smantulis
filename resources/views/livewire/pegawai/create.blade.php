@@ -10,7 +10,7 @@
 <!-- Modal -->
 <div wire:ignore.self class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
     aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Form</h5>
@@ -22,81 +22,81 @@
                 <form enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Masukan Nama lengkap + Title"
-                                wire:model="nama">
-                            @error('nama') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="jk">Jenis Kelamin</label>
-                            <select id="jk" wire:model="jk" class="form-control">
-                                <option value="-">-</option>
-                                <option value="L">Laki - laki</option>
-                                <option value="P">Perempuan</option>
-                            </select>
-                            @error('jk') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="nip">NIP</label>
-                            <input type="text" class="form-control" id="nip" placeholder="Masukan NIP (untuk PNS)"
-                                wire:model="nip">
-                        </div>
-                        <div class="form-group">
-                            <label for="nuptk">NUPTK</label>
-                            <input type="text" class="form-control" id="nuptk" placeholder="Masukan NUPTK (bagi yang punya)"
-                                wire:model="nuptk">
-                        </div>
-                        <div class="form-group">
-                            <label for="tpt_lahir">Tempat Lahir</label>
-                            <input type="text" class="form-control" id="tpt_lahir" placeholder="Masukan Tempat Lahir"
-                                wire:model="tpt_lahir">
-                            @error('tpt_lahir') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="tgl_lahir">Tanggal Lahir</label>
-                            <input type="date" id="tgl_lahir" wire:model="tgl_lahir" class="form-control">
-                            @error('tgl_lahir') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="ibu">Ibu Kandung</label>
-                            <input type="text" class="form-control" id="ibu" placeholder="Masukan Nama Ibu Kandung"
-                                wire:model="ibu">
-                            @error('ibu') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="jenis_ptk">Jenis PTK</label>
-                            <select id="jenis_ptk" wire:model="jenis_ptk" class="form-control">
-                                <option value="-">-</option>
-                                <option value="Guru">Guru</option>
-                                <option value="Tenaga Administrasi">Tenaga Administrasi</option>
-                                <option value="Kepala Sekolah">Kepala Sekolah</option>
-                            </select>
-                            @error('jenis_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="status_ptk">Status PTK</label>
-                            <select id="status_ptk" wire:model="status_ptk" class="form-control">
-                                <option value="-">-</option>
-                                <option value="PNS">PNS</option>
-                                <option value="NON PNS">NON PNS</option>
-                                <option value="PPPK">PPPK</option>
-                            </select>
-                            @error('status_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
-                        </div>
-                        <div class="form-group">
-                            <label for="customFile">Foto</label>
-                            <div class="custom-file">
-                                <label class="custom-file-label">
-                                    @if ($foto)
-                                        <a href="{{ $foto }}">Foto Terupload</a>
-                                    @endif
-                                </label>
-                                <input wire:model="foto" type="file" class="custom-file-input" id="customFile">
-                                @error('foto') <small class="text-danger">{{ $message }}</small> @enderror
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="nama"
+                                    placeholder="Masukan Nama lengkap + Title" wire:model="nama">
+                                @error('nama') <span class="text-danger error">{{ $message }}</span>@enderror
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label for="jk">Jenis Kelamin</label>
+                                <select id="jk" wire:model="jk" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="L">Laki - laki</option>
+                                    <option value="P">Perempuan</option>
+                                </select>
+                                @error('jk') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nip">NIP</label>
+                                <input type="text" class="form-control" id="nip" placeholder="Masukan NIP (untuk PNS)"
+                                    wire:model="nip">
+                            </div>
+                            <div class="form-group">
+                                <label for="nuptk">NUPTK</label>
+                                <input type="text" class="form-control" id="nuptk"
+                                    placeholder="Masukan NUPTK (bagi yang punya)" wire:model="nuptk">
+                            </div>
+                            <div class="form-group">
+                                <label for="tpt_lahir">Tempat Lahir</label>
+                                <input type="text" class="form-control" id="tpt_lahir"
+                                    placeholder="Masukan Tempat Lahir" wire:model="tpt_lahir">
+                                @error('tpt_lahir') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="tgl_lahir">Tanggal Lahir</label>
+                                <input type="date" id="tgl_lahir" wire:model="tgl_lahir" class="form-control">
+                                @error('tgl_lahir') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="ibu">Ibu Kandung</label>
+                                <input type="text" class="form-control" id="ibu" placeholder="Masukan Nama Ibu Kandung"
+                                    wire:model="ibu">
+                                @error('ibu') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="jenis_ptk">Jenis PTK</label>
+                                <select id="jenis_ptk" wire:model="jenis_ptk" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="Guru">Guru</option>
+                                    <option value="Tenaga Administrasi">Tenaga Administrasi</option>
+                                    <option value="Kepala Sekolah">Kepala Sekolah</option>
+                                </select>
+                                @error('jenis_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="status_ptk">Status PTK</label>
+                                <select id="status_ptk" wire:model="status_ptk" class="form-control">
+                                    <option value="-">-</option>
+                                    <option value="PNS">PNS</option>
+                                    <option value="NON PNS">NON PNS</option>
+                                    <option value="PPPK">PPPK</option>
+                                </select>
+                                @error('status_ptk') <span class="text-danger error">{{ $message }}</span>@enderror
+                            </div>
+                            <div class="form-group">
+                                <label for="customFile">Foto</label>
+                                <div class="custom-file">
+                                    <label class="custom-file-label">
+                                        @if ($foto)
+                                            <a href="{{ $foto }}">Foto Terupload</a>
+                                        @endif
+                                    </label>
+                                    <input wire:model="foto" type="file" class="custom-file-input" id="customFile">
+                                    @error('foto') <small class="text-danger">{{ $message }}</small> @enderror
+                                </div>
+                            </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
@@ -119,9 +119,10 @@
                             </div>
                             <div class="form-group">
                                 <label for="suami_istri">Suami / Istri</label>
-                                <input type="text" class="form-control" id="suami_istri" placeholder="Masukan Nama Suami / Istri"
-                                    wire:model="suami_istri">
-                                @error('suami_istri') <span class="text-danger error">{{ $message }}</span>@enderror
+                                <input type="text" class="form-control" id="suami_istri"
+                                    placeholder="Masukan Nama Suami / Istri" wire:model="suami_istri">
+                                @error('suami_istri') <span
+                                    class="text-danger error">{{ $message }}</span>@enderror
                             </div>
                             <div class="form-group">
                                 <label for="anak1">Anak Ke-1</label>

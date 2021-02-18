@@ -12,7 +12,8 @@
         crossorigin="anonymous" />
 </head>
 
-<body class="hold-transition layout-top-nav bg-light text-dark padding-top" style='background-image: url("/background-1.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll;'>
+<body class="hold-transition layout-top-nav bg-light text-dark padding-top"
+    style='background-image: url("/background-1.jpg"); background-position: left top; background-size: auto; background-repeat: repeat; background-attachment: scroll;'>
     <div class="wrapper">
         <nav class="main-header navbar navbar-expand-md navbar-light fixed-top mb-5 md-auto">
             <div class="container">
@@ -40,7 +41,8 @@
                                 class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="rombel" class="dropdown-item bg-light text-info rounded">Rombongan Belajar</a>
+                                <li><a href="rombel" class="dropdown-item bg-light text-info rounded">Rombongan
+                                        Belajar</a>
                                 </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a>
                                 </li>
@@ -53,7 +55,7 @@
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="/ppdb" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
-                                <li><a href="/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
+                                <li><a href="/pages/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
 
                                 <li class="dropdown-divider"></li>
 
@@ -63,20 +65,28 @@
                                         aria-haspopup="true" aria-expanded="false"
                                         class="dropdown-item dropdown-toggle bg-light text-info rounded">Ekstakurikuler</a>
                                     <ul aria-labelledby="dropdownSubMenu2" class="p-1 dropdown-menu border-0 shadow">
-                                        <li><a href="/pages/pramuka" class="dropdown-item bg-light text-info rounded">Pramuka</a>
+                                        <li><a href="/pages/pramuka"
+                                                class="dropdown-item bg-light text-info rounded">Pramuka</a>
                                         </li>
-                                        <li><a href="/pages/pmr" class="dropdown-item bg-light text-info rounded">PMR</a></li>
-                                        <li><a href="/pages/paskibra" class="dropdown-item bg-light text-info rounded">Paskibra</a>
+                                        <li><a href="/pages/pmr"
+                                                class="dropdown-item bg-light text-info rounded">PMR</a></li>
+                                        <li><a href="/pages/paskibra"
+                                                class="dropdown-item bg-light text-info rounded">Paskibra</a>
                                         </li>
-                                        <li><a href="#" class="dropdown-item bg-light">Basket</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Voli</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Futsal</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Seni Rupa</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Seni Musik</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Rohani Islam</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">English Club</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Japanese Club</a></li>
-                                        <li><a href="#" class="dropdown-item bg-light">Broadcasting</a></li>
+                                        <li><a href="/pages/basket" class="dropdown-item bg-light">Basket</a></li>
+                                        <li><a href="/pages/voli" class="dropdown-item bg-light">Voli</a></li>
+                                        <li><a href="/pages/futsal" class="dropdown-item bg-light">Futsal</a></li>
+                                        <li><a href="/pages/seni-rupa" class="dropdown-item bg-light">Seni Rupa</a></li>
+                                        <li><a href="/pages/seni-musik" class="dropdown-item bg-light">Seni Musik</a>
+                                        </li>
+                                        <li><a href="/pages/rohani-islam" class="dropdown-item bg-light">Rohani
+                                                Islam</a></li>
+                                        <li><a href="/pages/english-club" class="dropdown-item bg-light">English
+                                                Club</a></li>
+                                        <li><a href="/pages/japanese-club" class="dropdown-item bg-light">Japanese
+                                                Club</a></li>
+                                        <li><a href="/pages/broadcasting"
+                                                class="dropdown-item bg-light">Broadcasting</a></li>
                                     </ul>
                                 </li>
                                 <!-- End Level two -->
@@ -114,15 +124,15 @@
                                 Pendidik</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/kepala-sekolah"
-                                        class="dropdown-item bg-light text-info rounded">Kepala Sekolah</a></li>
+                                <li><a href="/kepala-sekolah" class="dropdown-item bg-light text-info rounded">Kepala
+                                        Sekolah</a></li>
                                 <li><a href="/wakil-kepala-sekolah"
                                         class="dropdown-item bg-light text-info rounded">Wakil Kepala
                                         Sekolah</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
+                                <li><a href="/guru" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
                                 </li>
                                 {{-- <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru BK</a></li> --}}
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi
+                                <li><a href="/tas" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi
                                         Sekolah</a></li>
                             </ul>
                         </li>

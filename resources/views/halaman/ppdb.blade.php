@@ -32,19 +32,23 @@
                         </h2>
                     </div>
                     <div class="card-body">
-                        <iframe class="embed-responsive mb-3" src="https://www.youtube.com/embed/v1WHXEPNfZc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="height: 360px"></iframe>
-                        <p>“Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan, Anda dapat mengubah dunia." (Nelson Mandela)
+                        <iframe class="embed-responsive mb-3" src="https://www.youtube.com/embed/v1WHXEPNfZc"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen style="height: 480px"></iframe>
+                        <p>“Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan, Anda dapat
+                            mengubah dunia." (Nelson Mandela)
                         </p>
-                        <p>Hallo sobat OFFICIAL SMAN 1 HAURGEULIS 
-                        Buat kalian yang kepo tentang sekolah kami silahkan tonton videonya sampai tuntas yaa... 
+                        <p>Hallo sobat OFFICIAL SMAN 1 HAURGEULIS
+                            Buat kalian yang kepo tentang sekolah kami silahkan tonton videonya sampai tuntas yaa...
                         </p>
                         <p>#smantulisjuara​
-                        #bondruhitz​
-                        #ppdb2021​
-                        #pelajarinovatif</p>
+                            #bondruhitz​
+                            #ppdb2021​
+                            #pelajarinovatif</p>
                     </div>
                     <div class="card-footer">
-                        
+
                     </div>
                 </div>
             </div>

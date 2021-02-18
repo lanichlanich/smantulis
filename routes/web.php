@@ -63,9 +63,12 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/', [LandingController::class, 'index']);
 Route::get('info-surat-keluar', [HalamanController::class, 'SuratKeluar']);
+Route::get('guru', [HalamanController::class, 'Guru']);
+Route::get('tas', [HalamanController::class, 'StafTu']);
 Route::get('rombel', [HalamanController::class, 'Rombel']);
 Route::get('visi-misi', [HalamanController::class, 'VisiMisi']);
 Route::get('kepala-sekolah', [HalamanController::class, 'Kepsek']);
+Route::get('wakil-kepala-sekolah', [HalamanController::class, 'Wakasek']);
 Route::get('ppdb', [HalamanController::class, 'Ppdb']);
 Route::get('posts/{slug}', [PostController::class, 'show']);
 Route::get('pages/{slug}', [PageController::class, 'show']);
