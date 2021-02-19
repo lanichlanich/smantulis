@@ -27,7 +27,7 @@ use App\Http\Controllers\SuratOutController;
 
 
 Auth::routes([
-    'register' => true
+    'register' => false
 ]);
 
 Route::group(['middleware' => ['auth']], function () {
