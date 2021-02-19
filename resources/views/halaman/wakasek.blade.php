@@ -42,7 +42,8 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="activity">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="ambar.jpg" alt="AdminLTE Logo"
+                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                        alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
                                     {{-- <img class="profile-user-img img-fluid img-circle" src="vendor/adminlte/dist/img/AdminLTELogo.png"
@@ -51,40 +52,37 @@
                                 </div>
                                 <h4 class="bg-warning p-2">Data Pribadi</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Nama : Rukiah, S.Pd</li>
-                                    <li class="bg-light p-1 mb-1">NIP : 197001281995121001</li>
-                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: Cilacap, 28 Januari 1970</li>
+                                    <li class="bg-light p-1 mb-1">Nama : RUKIAH, S.Si., M.Pd.</li>
+                                    <li class="bg-light p-1 mb-1">NIP : 19770707 200212 2 008</li>
+                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: </li>
                                     <li class="bg-light p-1 mb-1">Agama: Islam</li>
-                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: Pembina Tk.1, IV/b</li>
-                                    <li class="bg-light p-1 mb-1">Pendidikan: S1 - Pendidikan Geografi (IKIP Bandung/UPI)
+                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: </li>
+                                    <li class="bg-light p-1 mb-1">Pendidikan:
                                     </li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Pendidikan Formal</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">SD : SD Negeri Sindang II <span
-                                            class="badge badge-info">1983</span></li>
-                                    <li class="bg-light p-1 mb-1">SMP : SMP Negeri 2 Indramayu <span
-                                            class="badge badge-info">1986</span></li>
-                                    <li class="bg-light p-1 mb-1">SMA : SMA Negeri 1 Sindang <span
-                                            class="badge badge-info">1989</span></li>
-                                    <li class="bg-light p-1 mb-1">S1 : IKIP Bandung / Universitas Pendidikan Indonesia <span
-                                            class="badge badge-info">1994</span></li>
+                                    <li class="bg-light p-1 mb-1">SD : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMP : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMA : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">S1 : <span class="badge badge-info"></span></li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Riwayat Jabatan</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
+                                    {{-- <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
                                             class="badge badge-info">1994 - 2017</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Bongas <span
                                             class="badge badge-info">2017 - 2018</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Haurgeulis <span
-                                            class="badge badge-info">2018 - Sekarang</span></li>
+                                            class="badge badge-info">2018 - Sekarang</span></li> --}}
 
                                 </ul>
                             </div>
                             <!-- /.tab-pane -->
                             <div class="tab-pane" id="timeline">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="ambar.jpg" alt="AdminLTE Logo"
+                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                        alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
                                     {{-- <img class="profile-user-img img-fluid img-circle" src="vendor/adminlte/dist/img/AdminLTELogo.png"
@@ -93,33 +91,29 @@
                                 </div>
                                 <h4 class="bg-warning p-2">Data Pribadi</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Nama : Noman Supandi, S.Pd</li>
-                                    <li class="bg-light p-1 mb-1">NIP : 197001281995121001</li>
-                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: Cilacap, 28 Januari 1970</li>
+                                    <li class="bg-light p-1 mb-1">Nama : NOMAN SUPANDI, SE</li>
+                                    <li class="bg-light p-1 mb-1">NIP : 19711125 200701 1 006</li>
+                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: </li>
                                     <li class="bg-light p-1 mb-1">Agama: Islam</li>
-                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: Pembina Tk.1, IV/b</li>
-                                    <li class="bg-light p-1 mb-1">Pendidikan: S1 - Pendidikan Geografi (IKIP Bandung/UPI)
+                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: </li>
+                                    <li class="bg-light p-1 mb-1">Pendidikan:
                                     </li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Pendidikan Formal</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">SD : SD Negeri Sindang II <span
-                                            class="badge badge-info">1983</span></li>
-                                    <li class="bg-light p-1 mb-1">SMP : SMP Negeri 2 Indramayu <span
-                                            class="badge badge-info">1986</span></li>
-                                    <li class="bg-light p-1 mb-1">SMA : SMA Negeri 1 Sindang <span
-                                            class="badge badge-info">1989</span></li>
-                                    <li class="bg-light p-1 mb-1">S1 : IKIP Bandung / Universitas Pendidikan Indonesia <span
-                                            class="badge badge-info">1994</span></li>
+                                    <li class="bg-light p-1 mb-1">SD : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMP : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMA : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">S1 : <span class="badge badge-info"></span></li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Riwayat Jabatan</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
+                                    {{-- <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
                                             class="badge badge-info">1994 - 2017</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Bongas <span
                                             class="badge badge-info">2017 - 2018</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Haurgeulis <span
-                                            class="badge badge-info">2018 - Sekarang</span></li>
+                                            class="badge badge-info">2018 - Sekarang</span></li> --}}
 
                                 </ul>
                             </div>
@@ -127,7 +121,8 @@
 
                             <div class="tab-pane" id="settings">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="ambar.jpg" alt="AdminLTE Logo"
+                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                        alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
                                     {{-- <img class="profile-user-img img-fluid img-circle" src="vendor/adminlte/dist/img/AdminLTELogo.png"
@@ -136,33 +131,29 @@
                                 </div>
                                 <h4 class="bg-warning p-2">Data Pribadi</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Nama : Rinel, S.Pd</li>
-                                    <li class="bg-light p-1 mb-1">NIP : 197001281995121001</li>
-                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: Cilacap, 28 Januari 1970</li>
+                                    <li class="bg-light p-1 mb-1">Nama : RINEL, S.Si., M. Pd.</li>
+                                    <li class="bg-light p-1 mb-1">NIP : 19720623 200604 2 010</li>
+                                    <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: </li>
                                     <li class="bg-light p-1 mb-1">Agama: Islam</li>
-                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: Pembina Tk.1, IV/b</li>
-                                    <li class="bg-light p-1 mb-1">Pendidikan: S1 - Pendidikan Geografi (IKIP Bandung/UPI)
+                                    <li class="bg-light p-1 mb-1">Pangkat Golongan: </li>
+                                    <li class="bg-light p-1 mb-1">Pendidikan:
                                     </li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Pendidikan Formal</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">SD : SD Negeri Sindang II <span
-                                            class="badge badge-info">1983</span></li>
-                                    <li class="bg-light p-1 mb-1">SMP : SMP Negeri 2 Indramayu <span
-                                            class="badge badge-info">1986</span></li>
-                                    <li class="bg-light p-1 mb-1">SMA : SMA Negeri 1 Sindang <span
-                                            class="badge badge-info">1989</span></li>
-                                    <li class="bg-light p-1 mb-1">S1 : IKIP Bandung / Universitas Pendidikan Indonesia <span
-                                            class="badge badge-info">1994</span></li>
+                                    <li class="bg-light p-1 mb-1">SD : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMP : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SMA : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">S1 : <span class="badge badge-info"></span></li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Riwayat Jabatan</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
+                                    {{-- <li class="bg-light p-1 mb-1">Guru di SMAN 1 Haurgeulis <span
                                             class="badge badge-info">1994 - 2017</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Bongas <span
                                             class="badge badge-info">2017 - 2018</span></li>
                                     <li class="bg-light p-1 mb-1">Kepala Sekolah di SMAN 1 Haurgeulis <span
-                                            class="badge badge-info">2018 - Sekarang</span></li>
+                                            class="badge badge-info">2018 - Sekarang</span></li> --}}
 
                                 </ul>
                             </div>

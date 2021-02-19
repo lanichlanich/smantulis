@@ -91,6 +91,7 @@
                         </div>
                     </div>
                 @endforeach
+                {{ $posts->links() }}
             </div>
             <div class="col-md-3">
                 <div class="card card-outline card-warning mt-3">
@@ -100,13 +101,14 @@
                     <div class="card-body p-3">
                         <a href="/ppdb" type="button" class="btn btn-block btn-warning shadow-sm">PPDB
                             2021</a>
-                        <button type="button" class="btn btn-block btn-warning shadow-sm">Pendataan
-                            KIP 2021</button>
-                        <button type="button" class="btn btn-block btn-warning shadow-sm">Pendataan Hobi &
-                            Cita-cita</button>
-                        <button type="button" class="btn btn-block btn-warning shadow-sm">Bonrue Culture
+                        <a href="/guru" type="button" class="btn btn-block btn-warning shadow-sm">Daftar Guru</a>
+                        <a href="/tas" type="button" class="btn btn-block btn-warning shadow-sm">Daftar Tata Usaha</a>
+                        <a href="/info-surat-kelaur" type="button" class="btn btn-block btn-warning shadow-sm">Info Surat
+                            Keluar</a>
+
+                        {{-- <button type="button" class="btn btn-block btn-warning shadow-sm">Bonrue Culture
                             Festival</button>
-                        <button type="button" class="btn btn-block btn-warning shadow-sm">Porak 2021</button>
+                        <button type="button" class="btn btn-block btn-warning shadow-sm">Porak 2021</button> --}}
                     </div>
 
                 </div>

@@ -41,7 +41,7 @@
                                 class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="rombel" class="dropdown-item bg-light text-info rounded">Rombongan
+                                <li><a href="/rombel" class="dropdown-item bg-light text-info rounded">Rombongan
                                         Belajar</a>
                                 </li>
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a>
