@@ -30,7 +30,7 @@ return [
     |
     */
 
-    'use_ico_only' => false,
+    'use_ico_only' => true,
     'use_full_favicon' => false,
 
     /*
@@ -105,7 +105,7 @@ return [
     'classes_auth_header' => '',
     'classes_auth_body' => '',
     'classes_auth_footer' => '',
-    'classes_auth_icon' => '',
+    'classes_auth_icon' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'classes_auth_btn' => 'btn-flat btn-primary',
 
     /*

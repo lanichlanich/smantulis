@@ -25,18 +25,22 @@
     <div class="container mt-4 bg-white pb-2">
         <div class="row justify-content-center">
             <div class="col-md-12 mt-3">
-                <div class="card">
+                <div class="card card-info card-outline">
                     <div class="card-header p-2">
-                        <ul class="nav nav-pills px-auto justify-content-center">
-                            <li class="nav-item mx-2"><a class="nav-link bg-info" href="#activity" data-toggle="tab">Wakasek
-                                    Kurikulum</a>
+                        <h3 class="text-center p-3">Profile Wakil Kepala Sekolah</h3>
+                        <div class="nav nav-pills px-auto justify-content-center row">
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#activity"
+                                data-toggle="tab">Wakasek
+                                Kurikulum</a>
                             </li>
-                            <li class="nav-item mx-2"><a class="nav-link bg-info" href="#timeline" data-toggle="tab">Wakasek
-                                    Kesiswaan</a></li>
-                            <li class="nav-item mx-2"><a class="nav-link bg-info" href="#settings" data-toggle="tab">Wakasek
-                                    Sarana &
-                                    Prasarana</a></li>
-                        </ul>
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#timeline"
+                                data-toggle="tab">Wakasek
+                                Kesiswaan</a></li>
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#settings"
+                                data-toggle="tab">Wakasek
+                                Sarana &
+                                Prasarana</a></li>
+                        </div>
                     </div><!-- /.card-header -->
                     <div class="card-body">
                         <div class="tab-content">
@@ -57,15 +61,19 @@
                                     <li class="bg-light p-1 mb-1">Tempat/Tanggal Lahir: </li>
                                     <li class="bg-light p-1 mb-1">Agama: Islam</li>
                                     <li class="bg-light p-1 mb-1">Pangkat Golongan: </li>
-                                    <li class="bg-light p-1 mb-1">Pendidikan:
+                                    <li class="bg-light p-1 mb-1">Pendidikan: S2 - Pendidikan Biologi (UNIVERSITAS KUNINGAN)
                                     </li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Pendidikan Formal</h4>
                                 <ul>
-                                    <li class="bg-light p-1 mb-1">SD : <span class="badge badge-info"></span></li>
-                                    <li class="bg-light p-1 mb-1">SMP : <span class="badge badge-info"></span></li>
-                                    <li class="bg-light p-1 mb-1">SMA : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">SD : SD Negeri Haurgeulis I <span
+                                            class="badge badge-info">1982 - 1988 </span></li>
+                                    <li class="bg-light p-1 mb-1">SMP : SMP Negeri 1 haurgeulis <span
+                                            class="badge badge-info">1988 - 1991</span></li>
+                                    <li class="bg-light p-1 mb-1">SMA : SMA Negeri 6 Cirebon <span
+                                            class="badge badge-info">1991 - 1994</span></li>
                                     <li class="bg-light p-1 mb-1">S1 : <span class="badge badge-info"></span></li>
+                                    <li class="bg-light p-1 mb-1">S2 : <span class="badge badge-info"></span></li>
                                 </ul>
                                 <h4 class="bg-warning p-2">Riwayat Jabatan</h4>
                                 <ul>

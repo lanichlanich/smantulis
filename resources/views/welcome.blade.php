@@ -2,39 +2,41 @@
 
 @section('content')
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="s1.jpg" alt="First slide">
+    <div class="mt-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/s1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/s2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/s3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/s4.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/s5.jpg" alt="Third slide">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="s2.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="s3.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="s4.jpg" alt="Third slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="s5.jpg" alt="Third slide">
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 
 
@@ -44,7 +46,8 @@
                 <h4 class="align-top">
 
                     <blockquote class="quote-danger bg-white">
-                        <p class="bg-success py-2 rounded shadow-sm">Selamat datang di Website Resmi SMAN 1 Haurgeulis</p>
+                        <p class="bg-success py-2 rounded-pill shadow-sm">Selamat datang di Website Resmi SMAN 1 Haurgeulis
+                        </p>
                         <p>SMAN 1 Haurgeulis Siap menjadi sekolah menengah yang berprestasi, berbudaya dan berdaya saing di
                             tahun 2021</p>
                         <p>School of Creator & Inovator</p>
@@ -60,7 +63,7 @@
 
             </div>
             <div class="col-sm col-md-3 justify-content-center pb-4">
-                <img src="ambar.jpg" alt="AdminLTE Logo" class="mt-3 brand-image img-circle elevation-3 mr-2"
+                <img src="ambar.jpg" alt="AdminLTE Logo" class="mt-md-5 brand-image img-circle elevation-3 mr-2"
                     style="opacity: .8; width:200px">
                 {{-- <img class="profile-user-img img-fluid img-circle" src="vendor/adminlte/dist/img/AdminLTELogo.png"
                 alt="User profile picture"> --}}
@@ -103,7 +106,7 @@
                             2021</a>
                         <a href="/guru" type="button" class="btn btn-block btn-warning shadow-sm">Daftar Guru</a>
                         <a href="/tas" type="button" class="btn btn-block btn-warning shadow-sm">Daftar Tata Usaha</a>
-                        <a href="/info-surat-kelaur" type="button" class="btn btn-block btn-warning shadow-sm">Info Surat
+                        <a href="/info-surat-keluar" type="button" class="btn btn-block btn-warning shadow-sm">Info Surat
                             Keluar</a>
 
                         {{-- <button type="button" class="btn btn-block btn-warning shadow-sm">Bonrue Culture
@@ -141,5 +144,35 @@
 
         </div>
 
+    </div>
+
+    <div class="container bg-white mt-4 p-4">
+        <div class="row justify-content-center">
+            <div class="card col-md-3 m-4">
+                <div class="card-header">
+                    Test
+                </div>
+                <div class="card-body">
+                    Test
+                </div>
+            </div>
+            <div class="card col-md-3 m-4">
+                <div class="card-header">
+                    Test
+                </div>
+                <div class="card-body">
+                    Test
+                </div>
+            </div>
+            <div class="card col-md-3 m-4">
+                <div class="card-header">
+                    Test
+                </div>
+                <div class="card-body">
+                    Test
+                </div>
+            </div>
+
+        </div>
     </div>
 @endsection

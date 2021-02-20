@@ -33,6 +33,10 @@ class HalamanController extends Controller
     {
         return view('halaman.ppdb');
     }
+    public function InfoPip()
+    {
+        return view('halaman.info-pip');
+    }
 
     public function Wakasek()
     {

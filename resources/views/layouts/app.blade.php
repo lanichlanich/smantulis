@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
+    <link rel="shortcut icon" href="../vendor/adminlte/dist/img/AdminLTELogo.png" type="image/x-icon">
 </head>
 
 <body class="hold-transition layout-top-nav bg-light text-dark padding-top"
@@ -33,29 +34,34 @@
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="/" class="ml-md-5  nav-link bg-light text-info rounded rounded">Home</a>
+                            <a href="/" class="ml-md-5 nav-link bg-light text-info rounded-pill">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown bg-light">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded">Kurikulum</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Kurikulum</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/rombel" class="dropdown-item bg-light text-info rounded">Rombongan
+                                <li><a href="/visi-misi" class="dropdown-item bg-light text-info rounded-pill">Visi &
+                                        Misi</a>
+                                </li>
+                                <li><a href="/rombel" class="dropdown-item bg-light text-info rounded-pill">Rombongan
                                         Belajar</a>
                                 </li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Jadwal Pelajaran</a>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Jadwal
+                                        Pelajaran</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded">Kesiswaan</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Kesiswaan</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/ppdb" class="dropdown-item bg-light text-info rounded">PPDB</a></li>
-                                <li><a href="/pages/osis" class="dropdown-item bg-light text-info rounded">Osis</a></li>
+                                <li><a href="/ppdb" class="dropdown-item bg-light text-info rounded-pill">PPDB</a></li>
+                                <li><a href="/pages/osis" class="dropdown-item bg-light text-info rounded-pill">Osis</a>
+                                </li>
 
                                 <li class="dropdown-divider"></li>
 
@@ -63,15 +69,15 @@
                                 <li class="dropdown-submenu dropdown-hover">
                                     <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown"
                                         aria-haspopup="true" aria-expanded="false"
-                                        class="dropdown-item dropdown-toggle bg-light text-info rounded">Ekstakurikuler</a>
+                                        class="dropdown-item dropdown-toggle bg-light text-info rounded-pill">Ekstakurikuler</a>
                                     <ul aria-labelledby="dropdownSubMenu2" class="p-1 dropdown-menu border-0 shadow">
                                         <li><a href="/pages/pramuka"
-                                                class="dropdown-item bg-light text-info rounded">Pramuka</a>
+                                                class="dropdown-item bg-light text-info rounded-pill">Pramuka</a>
                                         </li>
                                         <li><a href="/pages/pmr"
-                                                class="dropdown-item bg-light text-info rounded">PMR</a></li>
+                                                class="dropdown-item bg-light text-info rounded-pill">PMR</a></li>
                                         <li><a href="/pages/paskibra"
-                                                class="dropdown-item bg-light text-info rounded">Paskibra</a>
+                                                class="dropdown-item bg-light text-info rounded-pill">Paskibra</a>
                                         </li>
                                         <li><a href="/pages/basket" class="dropdown-item bg-light">Basket</a></li>
                                         <li><a href="/pages/voli" class="dropdown-item bg-light">Voli</a></li>
@@ -94,45 +100,56 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Sarana
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Sarana
                                 & Prasarana</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Sarana</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Daftar Prasarana</a>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Daftar Sarana</a>
                                 </li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Perpustakaan</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Laboratoriom</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Daftar
+                                        Prasarana</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Perpustakaan</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Laboratoriom</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded">Informasi Digital</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Informasi Digital</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/info-surat-keluar" class="dropdown-item bg-light text-info rounded">Arsip
+                                <li><a href="/info-surat-keluar"
+                                        class="dropdown-item bg-light text-info rounded-pill">Arsip
                                         Surat Keluar</a>
                                 </li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Pendataan PIP</a></li>
-                                <li><a href="#" class="dropdown-item bg-light text-info rounded">Info PIP</a></li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Pendataan PIP</a>
+                                </li>
+                                <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Info PIP</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
-                                aria-expanded="false" class="nav-link dropdown-toggle bg-light text-info rounded">Tenaga
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Tenaga
                                 Pendidik</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
-                                <li><a href="/kepala-sekolah" class="dropdown-item bg-light text-info rounded">Kepala
+                                <li><a href="/kepala-sekolah"
+                                        class="dropdown-item bg-light text-info rounded-pill">Kepala
                                         Sekolah</a></li>
                                 <li><a href="/wakil-kepala-sekolah"
-                                        class="dropdown-item bg-light text-info rounded">Wakil Kepala
+                                        class="dropdown-item bg-light text-info rounded-pill">Wakil Kepala
                                         Sekolah</a></li>
-                                <li><a href="/guru" class="dropdown-item bg-light text-info rounded">Daftar Guru</a>
+                                <li><a href="/guru" class="dropdown-item bg-light text-info rounded-pill">Daftar
+                                        Guru</a>
                                 </li>
-                                {{-- <li><a href="#" class="dropdown-item bg-light text-info rounded">Guru BK</a></li> --}}
-                                <li><a href="/tas" class="dropdown-item bg-light text-info rounded">Tenaga Administrasi
+                                {{-- <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Guru BK</a></li> --}}
+                                <li><a href="/tas" class="dropdown-item bg-light text-info rounded-pill">Tenaga
+                                        Administrasi
                                         Sekolah</a></li>
                             </ul>
                         </li>
@@ -196,6 +213,9 @@
                         <h6 class="text-uppercase mb-4">CABANG DINAS PENDIDIKAN WILAYAH IX</h6>
                         <p class="text-muted mb-4">Jl. Budi Utomo, Sukajati, Kec. Haurgeulis, Kabupaten Indramayu, Jawa
                             Barat 45264</p>
+                        <iframe class="embed-responsive" frameborder="0"
+                            src="https://www.google.com/maps/d/embed?mid=1DZugn2i27OZoRydtGOg_Nnu9aaA"
+                            style="height: 360px"></iframe>
                         <ul class="list-inline mt-4">
                             <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
                                         class="fab fa-2x fa-twitter text-info"></i></a></li>
