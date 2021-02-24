@@ -36,6 +36,9 @@
                         <li class="nav-item">
                             <a href="/" class="ml-md-5 nav-link bg-light text-info rounded-pill">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="/" class="nav-link bg-light text-info rounded-pill">Profil  Sekolah</a>
+                        </li>
                         <li class="nav-item dropdown bg-light">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
@@ -101,8 +104,7 @@
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Sarana
-                                & Prasarana</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Sarpras</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="#" class="dropdown-item bg-light text-info rounded-pill">Daftar Sarana</a>
@@ -119,7 +121,7 @@
                         <li class="nav-item dropdown">
                             <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false"
-                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Informasi Digital</a>
+                                class="nav-link dropdown-toggle bg-light text-info rounded-pill">Aplikasi</a>
                             <ul aria-labelledby="dropdownSubMenu1" class="p-1 dropdown-menu border-0 shadow"
                                 style="left: 0px; right: inherit;">
                                 <li><a href="/info-surat-keluar"

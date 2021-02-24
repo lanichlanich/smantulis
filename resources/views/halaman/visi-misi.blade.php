@@ -34,7 +34,7 @@
                     <div class="card-body table-responsive">
                         <h2 class="bg-warning p-2">A. VISI</h2>
 
-                        <h3 class="bg-info p-4 text-center rounded-pill">Mewujudkan Sekolah yang berprestasi, berbudaya dan
+                        <h3 class="bg-info p-4 text-center rounded hover:bg-warning" >Mewujudkan Sekolah yang berprestasi, berbudaya dan
                             berdaya saing
                             tahun 2021.
                         </h3>

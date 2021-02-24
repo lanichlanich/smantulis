@@ -29,14 +29,14 @@
                     <div class="card-header p-2">
                         <h3 class="text-center p-3">Profile Wakil Kepala Sekolah</h3>
                         <div class="nav nav-pills px-auto justify-content-center row">
-                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#activity"
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2 rounded-pill" href="#activity"
                                 data-toggle="tab">Wakasek
                                 Kurikulum</a>
                             </li>
-                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#timeline"
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2 rounded-pill" href="#timeline"
                                 data-toggle="tab">Wakasek
                                 Kesiswaan</a></li>
-                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2" href="#settings"
+                            <a class="nav-link bg-info col-md-3 text-center mr-md-2 mb-2  rounded-pill" href="#settings"
                                 data-toggle="tab">Wakasek
                                 Sarana &
                                 Prasarana</a></li>
@@ -46,7 +46,7 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="activity">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                    <img src="/rukiah.jpg"
                                         alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
@@ -89,7 +89,7 @@
                             <!-- /.tab-pane -->
                             <div class="tab-pane" id="timeline">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                    <img src="/noman.jpg"
                                         alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
@@ -129,7 +129,7 @@
 
                             <div class="tab-pane" id="settings">
                                 <div class="justify-content-center pb-4 text-center">
-                                    <img src="https://cdn1.iconfinder.com/data/icons/flat-business-icons/128/user-512.png"
+                                    <img src="/rinel.jpg"
                                         alt="AdminLTE Logo"
                                         class="justify-content-center mt-3 brand-image img-circle elevation-3 mr-2"
                                         style="opacity: .8; width:200px">
