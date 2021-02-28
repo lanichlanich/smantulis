@@ -70,6 +70,14 @@ Route::get('visi-misi', [HalamanController::class, 'VisiMisi']);
 Route::get('kepala-sekolah', [HalamanController::class, 'Kepsek']);
 Route::get('wakil-kepala-sekolah', [HalamanController::class, 'Wakasek']);
 Route::get('ppdb', [HalamanController::class, 'Ppdb']);
+Route::get('dapodik', [HalamanController::class, 'Dapodik']);
 Route::get('info-pip', [HalamanController::class, 'InfoPip']);
 Route::get('posts/{slug}', [PostController::class, 'show']);
 Route::get('pages/{slug}', [PageController::class, 'show']);
+
+Route::get('/craw', function() {
+    $crawler = Goutte::request('GET', 'https://duckduckgo.com/html/?q=Laravel');
+    $crawler->filter('.result__title .result__a')->each(function ($node) {
+      dump($node->text());
+    });
+});
